@@ -1,0 +1,6 @@
+[submodule "dsa/leetcode"]
+	path = dsa/leetcode
+	url = https://github.com/SUSHIL1312/LeetCodeCheck.git
+[submodule "system-design/low-level-design"]
+	path = system-design/low-level-design
+	url = https://github.com/SUSHIL1312/DesignSystem.git
