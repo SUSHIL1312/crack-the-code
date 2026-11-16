@@ -11,6 +11,39 @@ A comprehensive, production-quality, code-first engineering platform designed to
 
 ---
 
+<!-- Google Search Engine Crawler & Rich Snippets Metadata -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Crack the Code: Zero to Hero FAANG Interview Preparation",
+  "description": "Production-quality, code-first curriculum preparing software engineers for technical interviews at Google, Meta, Amazon, Microsoft, Apple, Netflix, and Uber. Covers Operating Systems, Computer Networks, Modern C++20/C++23, System Design, REST API Architecture, and Concurrency with hands-on labs and test suites.",
+  "provider": {
+    "@type": "Person",
+    "name": "Sushil",
+    "url": "https://github.com/SUSHIL1312"
+  },
+  "educationalLevel": "Advanced",
+  "about": [
+    "FAANG Interview Preparation",
+    "Operating Systems Internals",
+    "Computer Networks",
+    "Modern C++20 and C++23",
+    "System Design and REST API Architecture",
+    "Concurrency and Multithreading",
+    "Linux Systems Programming",
+    "Python CPython Internals"
+  ],
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Online",
+    "courseWorkload": "PT30H"
+  }
+}
+</script>
+
+---
+
 ## 🎯 Learning Philosophy: Learn by Doing
 
 This repository rejects shallow theory notes and passive reading. Every concept is taught through an uncompromising 7-stage engineering pipeline:
@@ -20,8 +53,8 @@ $$\text{Concept} \longrightarrow \text{Internal Mechanics} \longrightarrow \text
 1. **Why It Exists**: Real-world analogy and engineering motivation.
 2. **Under the Hood**: How the OS kernel, hardware memory hierarchy, or language runtime handles it.
 3. **Visual Diagrams**: Memory layout, stack/heap frames, and state transition graphs.
-4. **Runnable Implementation**: Complete, self-contained, and independently executable code.
-5. **Experiments**: Intentional failure modes (race conditions, memory leaks, cache misses, buffer pressure).
+4. **Interactive Coding Labs**: Candidate problem templates with explicit `// TODO` blocks and automated test suites (`make test`) that report PASS/FAIL.
+5. **Reference Solutions**: Battle-tested, idiomatic implementations in `solutions/` with complexity and tradeoff analyses.
 6. **Interview Drills**: Detailed questions, model answers, follow-ups, and common candidate traps.
 7. **Advanced Challenge**: Real-world implementation problem combining multiple concepts.
 
@@ -31,25 +64,28 @@ $$\text{Concept} \longrightarrow \text{Internal Mechanics} \longrightarrow \text
 
 ```
 crack-the-code/
-├── README.md                           # Main portal and progress tracking
+├── README.md                           # Main portal and search engine index
 ├── LEARNING_GUIDE.md                   # How to study, experiment, and debug
 ├── ROADMAP.md                          # Sequential learning progression
 ├── INTERVIEW_PREPARATION.md            # Fast-track 7-day, 14-day, and 30-day plans
 ├── CONTRIBUTING.md                     # Code quality rules and guidelines
 ├── RESEARCH_SOURCES.md                 # Authoritative references (OSTEP, RFCs, PEPs, C++ Core Guidelines)
+├── robots.txt                          # Crawler discovery directive
+├── sitemap.xml                         # Canonical search engine sitemap
 │
 ├── dsa/                                # Data Structures & Algorithms Hub
 │   ├── README.md                       # DSA overview and navigation
 │   └── leetcode/                       # Submodule -> SUSHIL1312/LeetCodeCheck.git
 │
 ├── system-design/                      # System Design Hub
-│   ├── README.md                       # LLD and HLD navigation
+│   ├── README.md                       # System Design overview
+│   ├── rest-api-design/                # Production REST API Design (Idempotency, Pagination, ETags, RFC 7807)
 │   ├── low-level-design/               # Submodule -> SUSHIL1312/DesignSystem.git
 │   └── high-level-design/              # Distributed Systems & HLD placeholder
 │
 ├── core-cs/                            # Core Computer Science Curriculum
 │   ├── README.md                       # Core CS overview
-│   ├── operating-systems/              # 14 In-depth modules + 7 capstone projects (C++ / POSIX)
+│   ├── operating-systems/              # 14 In-depth modules + 7 capstone projects + Hands-on Labs
 │   └── computer-networks/              # 13 In-depth modules + 7 capstone projects (C++ / Sockets)
 │
 ├── languages/                          # Programming Languages Curriculum
@@ -118,6 +154,11 @@ make help
 * **CPython Internals**: Small object allocator (pymalloc), reference counting, generational cyclic GC, bytecode evaluation loop, and the evolving GIL (including Python 3.13 free-threaded PEP 703 and copy-and-patch JIT PEP 744).
 * **Async & Concurrency**: Asyncio event loop, `TaskGroup` structured concurrency, multiprocessing with shared memory.
 * **Projects**: Custom Iterators, Dynamic Plugin Framework, Memory Profiler, Async HTTP Client, CLI Tool.
+
+### 5. [System Design: REST API Architecture](system-design/rest-api-design/)
+* **Core Principles**: Roy Fielding's 6 constraints, Safe vs Idempotent HTTP methods, resource-oriented URI modeling.
+* **Production Best Practices**: `Idempotency-Key` headers for payment safety, cursor/keyset pagination vs offset pagination, optimistic concurrency with `ETag` and `If-Match`, RFC 7807 Problem Details error schema, and token-bucket rate limiting.
+* **Case Study & Code**: Complete E-Commerce API design and fully runnable reference server (`rest_api_server_demo.py`) with automated test suite.
 
 ---
 

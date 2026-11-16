@@ -1,0 +1,6 @@
+# robots.txt for Crack the Code - Zero to Hero FAANG Interview Preparation
+User-agent: *
+Allow: /
+
+# Canonical Sitemap
+Sitemap: https://raw.githubusercontent.com/SUSHIL1312/crack-the-code/main/sitemap.xml

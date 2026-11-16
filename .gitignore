@@ -11,6 +11,7 @@ dist/
 *.a
 *.exe
 *.out
+test_*
 *.dSYM/
 CMakeCache.txt
 CMakeFiles/

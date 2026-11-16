@@ -8,13 +8,20 @@ System design is divided into two disciplines: **Low-Level Design (LLD)** (Objec
 
 ```
 system-design/
+├── rest-api-design/       # Production REST API Design (Idempotency, Pagination, ETags, RFC 7807)
 ├── low-level-design/      # Git submodule -> SUSHIL1312/DesignSystem.git
 └── high-level-design/     # Distributed Systems & System Architecture (Placeholder)
 ```
 
 ---
 
-## 1. Low-Level Design (LLD) / Design Patterns
+## 1. REST API Design (Production-Grade)
+* **Path**: [`rest-api-design/`](./rest-api-design)
+* **Coverage**: Complete guide to production REST API architecture, HTTP verbs (Safety vs Idempotency), status codes, Idempotency-Key headers, cursor-based pagination, RFC 7807 Problem Details error formats, optimistic concurrency with ETags, and an end-to-end runnable reference server.
+
+---
+
+## 2. Low-Level Design (LLD) / Design Patterns
 * **Integrated Repository**: [`SUSHIL1312/DesignSystem`](https://github.com/SUSHIL1312/DesignSystem.git)
 * **Local Submodule Path**: [`low-level-design/`](./low-level-design)
 * **Focus**: Gang of Four (GoF) design patterns, SOLID principles, class diagrams, schema design, and modular software implementation.
