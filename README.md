@@ -90,8 +90,8 @@ crack-the-code/
 │
 ├── languages/                          # Programming Languages Curriculum
 │   ├── README.md                       # Languages overview
-│   ├── modern-cpp/                     # 25 In-depth modules + 10 capstone projects (C++17/20/23)
-│   └── python/                         # 23 In-depth modules + 10 capstone projects (Python 3.12+)
+│   ├── modern-cpp/                     # High-Yield Modules + 5 Capstone Projects (C++17/20/23)
+│   └── python/                         # High-Yield Modules + 4 Capstone Projects (Python 3.12+)
 │
 └── ai-systems/                         # AI & Agentic Architectures (Future Phase)
     └── agentic-systems/                # Placeholder
