@@ -11,6 +11,12 @@ A comprehensive, production-quality, code-first engineering platform designed to
 
 > **Core Pillars**: Operating Systems Internals • Computer Networks • Distributed System Design & REST APIs • Modern C++20/23 • Python CPython Internals • Concurrency & Multithreading
 
+> [!TIP]
+> **⚡ High-Yield Interview Portals**:
+> - **[⏱️ 60-Minute Last-Minute Revision Cram Sheet](LAST_MINUTE_REVISION.md)**: Rapid revision sheet covering high-frequency FAANG interview questions, memory layouts, and instant one-liners.
+> - **[🗺️ Master Engineering Roadmap](ROADMAP.md)**: 5-phase sequential blueprint with self-assessment checkpoints and 24-hour final countdown.
+> - **[📅 7-Day / 14-Day / 30-Day Preparation Tracks](INTERVIEW_PREPARATION.md)**: Customized study tracks based on your upcoming interview timeline.
+
 ---
 
 ## 🎯 Learning Philosophy: Learn by Doing
@@ -34,7 +40,7 @@ $$\text{Concept} \longrightarrow \text{Internal Mechanics} \longrightarrow \text
 ```
 crack-the-code/
 ├── README.md                           # Main portal and search engine index
-├── LEARNING_GUIDE.md                   # How to study, experiment, and debug
+├── LAST_MINUTE_REVISION.md             # ⏱️ 60-Minute rapid cram sheet for interviews
 ├── ROADMAP.md                          # Sequential learning progression
 ├── INTERVIEW_PREPARATION.md            # Fast-track 7-day, 14-day, and 30-day plans
 ├── CONTRIBUTING.md                     # Code quality rules and guidelines
