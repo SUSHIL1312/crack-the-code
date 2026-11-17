@@ -9,38 +9,7 @@ A comprehensive, production-quality, code-first engineering platform designed to
 
 > **Google • Amazon • Microsoft • Meta • Apple • Netflix • Uber • NVIDIA • Qualcomm • Adobe • Salesforce • Atlassian**
 
----
-
-<!-- Google Search Engine Crawler & Rich Snippets Metadata -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Crack the Code: Zero to Hero FAANG Interview Preparation",
-  "description": "Production-quality, code-first curriculum preparing software engineers for technical interviews at Google, Meta, Amazon, Microsoft, Apple, Netflix, and Uber. Covers Operating Systems, Computer Networks, Modern C++20/C++23, System Design, REST API Architecture, and Concurrency with hands-on labs and test suites.",
-  "provider": {
-    "@type": "Person",
-    "name": "Sushil",
-    "url": "https://github.com/SUSHIL1312"
-  },
-  "educationalLevel": "Advanced",
-  "about": [
-    "FAANG Interview Preparation",
-    "Operating Systems Internals",
-    "Computer Networks",
-    "Modern C++20 and C++23",
-    "System Design and REST API Architecture",
-    "Concurrency and Multithreading",
-    "Linux Systems Programming",
-    "Python CPython Internals"
-  ],
-  "hasCourseInstance": {
-    "@type": "CourseInstance",
-    "courseMode": "Online",
-    "courseWorkload": "PT30H"
-  }
-}
-</script>
+> **Core Pillars**: Operating Systems Internals • Computer Networks • Distributed System Design & REST APIs • Modern C++20/23 • Python CPython Internals • Concurrency & Multithreading
 
 ---
 
