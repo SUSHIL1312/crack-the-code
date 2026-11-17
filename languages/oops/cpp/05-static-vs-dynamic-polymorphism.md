@@ -48,16 +48,44 @@ void process_packet(BasePacketParser<T>& parser) {
 
 ---
 
-## 2. Modern Static Polymorphism: C++20 Concepts
+## 2. Static Interface Constraints: C++14 SFINAE vs. C++20 Concepts
 
-While CRTP is powerful, it involves complex syntax. **C++20 Concepts** provide a first-class language feature to specify compile-time interface contracts cleanly using the `requires` clause:
+How do you enforce that a template type implements specific methods (like `print()`) at compile time?
+
+### 🔴 The C++14 Way (SFINAE & Expression Detection):
+In C++14, enforcing that `T` has a `.print()` method required cryptic `std::enable_if_t` and `decltype` boilerplate:
+
+```cpp
+#include <iostream>
+#include <type_traits>
+
+// C++14: SFINAE helper checking if T has .print()
+template <typename T>
+class has_print {
+    template <typename U>
+    static auto test(int) -> decltype(std::declval<U>().print(), std::true_type());
+    template <typename>
+    static auto test(...) -> std::false_type;
+public:
+    static constexpr bool value = decltype(test<T>(0))::value;
+};
+
+// Constrained function using enable_if_t:
+template <typename T, typename = std::enable_if_t<has_print<T>::value>>
+void render_item_cpp14(const T& item) {
+    item.print();
+}
+```
+
+### 🟢 The C++20 Way (Concepts & `requires`):
+C++20 replaces all the SFINAE boilerplate with clear, declarative **Concepts**:
 
 ```cpp
 #include <concepts>
 #include <iostream>
 #include <string>
 
-// Define the compile-time interface contract
+// Define the compile-time interface contract in 4 readable lines:
 template <typename T>
 concept Printable = requires(T a) {
     { a.to_string() } -> std::same_as<std::string>;

@@ -1,11 +1,40 @@
 # Module 07: Concurrency, Multithreading & Atomics
 
-## 1. `std::jthread` vs `std::thread` (C++20)
-`std::jthread` solves the biggest issue with C++11 `std::thread`:
-- **Auto-joining on destruction**: Destructor automatically requests cancellation and calls `join()`, preventing `std::terminate()`.
-- **Cooperative Cancellation**: Built-in support for `std::stop_token`.
+## 1. `std::jthread` (C++20) vs `std::thread` (C++14)
 
----
+### 🔴 The C++14 Way (`std::thread` Pitfall):
+```cpp
+#include <thread>
+#include <iostream>
+
+void risky_task() {
+    std::thread t([]() {
+        std::cout << "Working...\n";
+    });
+
+    // FATAL BUG: If an exception is thrown here before t.join(),
+    // t's destructor invokes std::terminate() and CRASHES the whole process!
+    // In C++14, you had to manually wrap this in try-catch or write a ThreadGuard class.
+    t.join();
+}
+```
+
+### 🟢 The C++20 Way (`std::jthread` Auto-Joining RAII):
+```cpp
+#include <thread>
+#include <iostream>
+
+void safe_task() {
+    // std::jthread auto-joins in its destructor on scope exit!
+    std::jthread t([](std::stop_token st) {
+        while (!st.stop_requested()) {
+            std::cout << "Working safely...\n";
+            break;
+        }
+    });
+    // Zero risk of crash! If an exception throws, t.~jthread() safely joins.
+}
+```
 
 ## 2. Mutexes & RAII Lock Wrappers
 - `std::unique_lock<std::mutex>`: Required for `condition_variable::wait()`. Supports manual unlocking and deferred locking.

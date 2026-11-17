@@ -1,24 +1,40 @@
 # Module 05: Templates, SFINAE & C++20 Concepts
 
-## 1. What is SFINAE?
+## 1. What is SFINAE? (The C++14 Approach)
 **SFINAE** stands for **Substitution Failure Is Not An Error**.
 - When the compiler tries to deduce template arguments for a function overload, if a substitution fails in the signature, the compiler simply drops that overload from the candidate set without issuing a compilation error.
-- Historically implemented using `std::enable_if_t`:
+
+### 🔴 The C++14 SFINAE Implementation:
 ```cpp
-template <typename T, typename = std::enable_if_t<std::is_integral_v<T>>>
-void process(T val); // Only participates in overload resolution if T is integer
+#include <type_traits>
+
+// In C++14, you used std::enable_if_t to restrict templates:
+template <typename T, typename = std::enable_if_t<std::is_integral<T>::value>>
+void process_int_only(T val); // Overload enabled ONLY if T is an integral type
+
+// Overload for floating-point types:
+template <typename T, typename = std::enable_if_t<std::is_floating_point<T>::value>>
+void process_float_only(T val);
 ```
 
 ---
 
 ## 2. C++20 Concepts (`concept` and `requires`)
-C++20 obsoletes messy SFINAE with first-class, readable language constraints:
+C++20 replaces cryptic SFINAE with first-class, readable language constraints:
+
+### 🟢 The C++20 Concepts Implementation:
 ```cpp
+#include <concepts>
+
 template <typename T>
 concept Numeric = std::is_arithmetic_v<T>;
 
+// Clean syntax:
 template <Numeric T>
 T add(T a, T b) { return a + b; }
+
+// Terse syntax (most common in modern codebases):
+auto add(Numeric auto a, Numeric auto b) { return a + b; }
 ```
 - If a caller passes `std::string`, the compiler immediately produces an intuitive diagnostic:
   `note: constraints not satisfied because 'std::is_arithmetic_v<std::string>' evaluated to false`.

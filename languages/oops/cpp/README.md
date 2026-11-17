@@ -8,6 +8,9 @@ Unlike managed languages (Java, C#, Python) where every object has runtime metad
 - Objects have **no runtime type info (RTTI) or vtable overhead** unless at least one virtual function is declared.
 - Object destruction is **strictly deterministic**: destructors execute at well-defined points on stack unwind or explicit deletion.
 
+> [!TIP]
+> **Coming from C++14?** Read the **[C++14 to C++20 Migration & Translation Guide](../../modern-cpp/CPP14_TO_CPP20_BRIDGE.md)** for side-by-side code snippets translating C++14 idioms to Modern C++20!
+
 ---
 
 ## 📂 Curriculum Index
