@@ -4,6 +4,23 @@ Processes and threads are the core abstractions by which an Operating System exe
 
 ---
 
+## 🖼️ Memory Architecture: The 64-bit Virtual Address Space
+
+Every Linux process runs inside a canonical 64-bit virtual address space, strictly dividing kernel privileges from user execution:
+
+![64-bit Linux Process Virtual Memory Layout](../diagrams/linux_process_memory_layout.jpg)
+
+### Segment Breakdown:
+1. **Kernel Virtual Memory (Top)**: Mapped into every process but protected by CPU ring privilege levels. User code attempting to access it triggers a `SIGSEGV` (Segmentation Fault).
+2. **User Stack (Grows Downward)**: Stores local variables, function frames, return addresses, and register backups. Tracked by the `%rsp` stack pointer register.
+3. **Memory Mapping Segment (`mmap`)**: Dynamically loaded shared libraries (`libc.so`), memory-mapped files, and large memory allocations.
+4. **Heap Segment (Grows Upward)**: Dynamic runtime memory requested via `malloc()` / `new`. Managed by `brk` and `sbrk` kernel boundaries.
+5. **BSS Segment**: Block Started by Symbol. Stores uninitialized global and static variables, zero-initialized by the kernel at program start.
+6. **Data Segment**: Initialized global and static variables explicitly assigned values in source code.
+7. **Text Segment (Bottom)**: Read-only executable binary machine code instructions. Writing to `.text` triggers an immediate segmentation fault.
+
+---
+
 ## 📑 Module Contents
 
 1. [Theory & Concepts](theory.md)

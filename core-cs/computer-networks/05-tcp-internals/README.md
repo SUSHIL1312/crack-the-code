@@ -7,6 +7,28 @@ In this module, you will master the deep internal mechanics of TCP state transit
 
 ---
 
+## 🖼️ Architectural Blueprint: The TCP Connection Lifecycle
+
+![TCP Connection Lifecycle: Handshake, Transfer and Teardown](../diagrams/tcp_handshake_teardown.jpg)
+
+### Key Phase Transitions & Interview Questions:
+1. **Phase 1: 3-Way Handshake**:
+   - `Client` sends `SYN seq=x` (enters `SYN-SENT`).
+   - `Server` responds with `SYN-ACK seq=y, ack=x+1` (enters `SYN-RECEIVED`).
+   - `Client` replies with `ACK ack=y+1` (both enter `ESTABLISHED`).
+2. **Phase 2: Bidirectional Data Transfer**:
+   - Packets flow according to the sliding window protocol. Sequence numbers track payload bytes, and ACKs confirm the next expected byte offset.
+3. **Phase 3: 4-Way Teardown & The TIME_WAIT State**:
+   - Active closer sends `FIN`, enters `FIN-WAIT-1`.
+   - Passive receiver sends `ACK`, enters `CLOSE-WAIT`. Active closer enters `FIN-WAIT-2`.
+   - Passive receiver sends `FIN`, enters `LAST-ACK`.
+   - Active closer sends `ACK`, enters **`TIME_WAIT`**!
+   - **Why TIME_WAIT lasts 2MSL (Maximum Segment Lifetime)**:
+     1. To guarantee the final `ACK` is reliably received by the peer (if lost, peer retransmits `FIN`, which is re-ACKed).
+     2. To allow any stale duplicate packets lingering in network routers to dissipate before a new connection reuses the same 4-tuple (Source IP, Source Port, Dest IP, Dest Port).
+
+---
+
 ## Learning Objectives
 1. **The 3-Way Handshake**: Dissect SYN, SYN-ACK, ACK transitions, Initial Sequence Number (ISN) generation, MSS negotiation, and TCP Options (Window Scaling, SACK).
 2. **SYN Flood Attacks & SYN Cookies**: Understand how half-open connection queues can exhaust server memory, and how stateless cryptographic sequence numbers (RFC 4987) defeat Denial of Service.

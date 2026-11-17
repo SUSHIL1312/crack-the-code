@@ -4,6 +4,20 @@ This curriculum takes software engineers from fundamental hardware interactions 
 
 ---
 
+## 🖼️ Architectural Visualizations
+
+### 1. 64-bit Linux Process Virtual Memory Layout
+Every running Linux process operates within its own private virtual address space, isolating it from all other processes:
+
+![64-bit Linux Process Virtual Memory Layout](diagrams/linux_process_memory_layout.jpg)
+
+### 2. Virtual Memory Translation & Multi-Level Paging
+How the Memory Management Unit (MMU) converts virtual addresses into physical RAM frames using the TLB cache and hierarchical page tables:
+
+![Virtual Memory Translation & Multi-Level Paging](diagrams/virtual_memory_paging.jpg)
+
+---
+
 ## 🗺️ Curriculum Structure
 
 ```

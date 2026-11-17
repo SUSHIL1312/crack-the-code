@@ -50,6 +50,8 @@ Client Request with Idempotency-Key
               └── 5. Return 201 Created to client
 ```
 
+![REST API Idempotency and Optimistic Concurrency Control Flow](../diagrams/rest_idempotency_locking.jpg)
+
 ---
 
 ## 2. Pagination: Offset vs Cursor (Keyset)

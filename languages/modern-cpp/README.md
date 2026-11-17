@@ -28,6 +28,20 @@ Zero academic fluff. Every module is structured around memory layouts, assembly 
 
 ---
 
+## 🖼️ Architectural Blueprint: Smart Pointer Control Block Internals
+
+![C++ Smart Pointer Control Block and Weak Pointer Memory Layout](diagrams/smart_pointer_control_block.jpg)
+
+### Key Architectural Takeaways for Interviews:
+- **`std::make_shared<T>()` vs `std::shared_ptr<T>(new T)`**:
+  - `std::make_shared` performs **1 single heap allocation** containing both the Control Block (`Strong Count`, `Weak Count`, Allocator) and the managed `T` instance. This optimizes CPU cache line spatial locality.
+  - Using `new T` forces **2 separate heap allocations**, creating extra heap fragmentation and pointer indirection.
+- **`std::weak_ptr` Lifetime Trap**:
+  - The destructor `~T()` runs when the strong reference count drops to 0.
+  - However, the underlying control block memory is **not freed** until all `weak_ptr` instances are also destroyed (weak reference count drops to 0). In `make_shared`, because `T` and the control block share a single allocation, the memory for `T` is retained until `weak_count == 0`!
+
+---
+
 ## 🛠️ Capstone Projects (`projects/`)
 
 Battle-tested implementations of the 5 most common C++ coding interview project challenges:

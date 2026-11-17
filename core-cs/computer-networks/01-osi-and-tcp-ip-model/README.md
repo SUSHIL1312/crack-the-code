@@ -7,6 +7,19 @@ In this module, you will master the mechanics of packet encapsulation, decapsula
 
 ---
 
+## 🖼️ Architectural Blueprint: Encapsulation & Decapsulation Pipeline
+
+![Network Packet Encapsulation and Decapsulation Pipeline](../diagrams/packet_encapsulation_pipeline.jpg)
+
+### Protocol Data Units (PDUs) Across Layers:
+1. **Application Layer (Layer 7)**: Generates the raw application **Data/Payload** (e.g., `HTTP GET /index.html`).
+2. **Transport Layer (Layer 4)**: Wraps Data with a TCP/UDP header containing Source & Destination Ports $\implies$ **Segment**.
+3. **Network Layer (Layer 3)**: Wraps Segment with an IP header containing Source & Destination IP addresses $\implies$ **Packet**.
+4. **Data Link Layer (Layer 2)**: Wraps Packet with an Ethernet header (MAC addresses) and adds a CRC32 Frame Check Sequence (FCS) trailer $\implies$ **Frame**.
+5. **Physical Layer (Layer 1)**: Converts Frame into electronic voltage pulses, fiber light pulses, or radio waves $\implies$ **Bits**.
+
+---
+
 ## Learning Objectives
 1. **OSI 7-Layer vs TCP/IP 4-Layer**: Compare Layer 7 down to Layer 1, understanding the specific responsibilities of each tier.
 2. **Encapsulation & Decapsulation**: Trace how application payloads are progressively wrapped in transport headers, network headers, and data-link frame headers and trailers.

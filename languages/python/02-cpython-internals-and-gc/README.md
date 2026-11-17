@@ -29,8 +29,12 @@ Even after `del a, b`, both lists retain `ob_refcnt == 1` because they point to 
 ---
 
 ## 3. The Generational Cyclic GC
+
+![CPython Memory Management & 3-Generation Cyclic Garbage Collector](../diagrams/cpython_gc_generations.jpg)
+
 To reclaim cyclic leaks, CPython runs a secondary **Generational Cyclic Garbage Collector**:
-- **3 Generations**: Gen 0 (young objects), Gen 1 (middle-aged), Gen 2 (long-lived).
-- New objects start in Gen 0.
-- When allocations minus deallocations exceed a threshold, Gen 0 collection triggers. Surviving objects are promoted to Gen 1.
-- Algorithm: Tracks container objects (`list`, `dict`, `set`, custom classes) and subtracts internal references. If an isolated graph of objects has zero external references, the entire cycle is reclaimed!
+- **3 Generations**:
+  - **Generation 0**: Newly created container objects. Collected most frequently (triggered when object allocations exceed deallocations by 700).
+  - **Generation 1**: Survivors of Gen 0 collection. Collected every 10 Gen 0 collections.
+  - **Generation 2**: Long-lived objects (module globals, long-lived caches). Collected least frequently (every 10 Gen 1 collections).
+- **Tri-Color Algorithm**: CPython tracks pointer references between container objects (`list`, `dict`, `set`, custom classes). It subtracts internal cross-references: if an isolated graph of cyclic objects has 0 external references, the entire circular cluster is reclaimed to the object pool!

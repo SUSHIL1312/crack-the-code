@@ -4,6 +4,20 @@ This curriculum covers the complete networking stack from physical and data-link
 
 ---
 
+## 🖼️ Architectural Visualizations
+
+### 1. TCP Connection Lifecycle: Handshake, Transfer & 4-Way Teardown
+State transitions and sequence arithmetic governing reliable data transport across the internet:
+
+![TCP Connection Lifecycle: Handshake, Transfer and Teardown](diagrams/tcp_handshake_teardown.jpg)
+
+### 2. Packet Encapsulation & Decapsulation Pipeline
+How application payloads are wrapped in transport segments, IP packets, and link frames down to physical wire bits:
+
+![Packet Encapsulation and Decapsulation Pipeline](diagrams/packet_encapsulation_pipeline.jpg)
+
+---
+
 ## 🗺️ Curriculum Structure
 
 ```

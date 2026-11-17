@@ -45,3 +45,21 @@ Welcome to the comprehensive, production-grade guide to **REST API Design**. Thi
 4. Never double charge:
    - Always use an Idempotency-Key header on financial / mutating POST endpoints!
 ```
+
+---
+
+## 🖼️ Architectural Blueprint: Idempotency & Concurrency Control
+
+![REST API Idempotency and Optimistic Locking Architecture](diagrams/rest_idempotency_locking.jpg)
+
+### Production & FAANG Interview Mechanics:
+1. **Idempotency Key Flow (`Idempotency-Key: <UUID>`)**:
+   - The API Gateway checks Redis atomically using `SET key token NX EX 86400`.
+   - **First Request**: Key is acquired with status `IN_FLIGHT`. Request processes through business logic and payment gateway. Result is cached in Redis with TTL.
+   - **Retry While Processing**: Returns `409 Conflict` ("Request currently processing; retry after delay").
+   - **Retry After Completion**: Gateway intercepts the request, reads the cached JSON response from Redis, and returns `200/201` without hitting downstream payment processors or database!
+2. **Optimistic Concurrency Control (`ETag` & `If-Match`)**:
+   - Resolves the classic "Lost Update" race condition when concurrent users attempt to mutate the same resource.
+   - Client sends `If-Match: "v1"`.
+   - If the resource state changed to `"v2"`, the database transaction rejects the update, returning `412 Precondition Failed` so the client must re-fetch before updating.
+

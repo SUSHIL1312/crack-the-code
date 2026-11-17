@@ -140,6 +140,24 @@ make help
 
 ---
 
+## 🖼️ Visual Architecture Gallery (AI-Generated Blueprints)
+
+To accelerate mental modeling, high-yield architectural blueprints are embedded throughout the curriculum:
+
+| Domain | Architectural Concept | Blueprint Link |
+|---|---|---|
+| **Operating Systems** | 64-Bit Process Virtual Memory Layout (Stack, Heap, BSS, Data, Text, Kernel) | [View Blueprint](core-cs/operating-systems/diagrams/linux_process_memory_layout.jpg) |
+| **Operating Systems** | Hardware Virtual Memory Paging & Multi-Level Page Walk | [View Blueprint](core-cs/operating-systems/diagrams/virtual_memory_paging.jpg) |
+| **Computer Networks** | TCP 3-Way Handshake, Sequence Numbers & 4-Way Teardown (TIME_WAIT) | [View Blueprint](core-cs/computer-networks/diagrams/tcp_handshake_teardown.jpg) |
+| **Computer Networks** | OSI vs TCP/IP Encapsulation Pipeline (Data $\to$ Segment $\to$ Packet $\to$ Frame $\to$ Bits) | [View Blueprint](core-cs/computer-networks/diagrams/packet_encapsulation_pipeline.jpg) |
+| **Modern C++** | Smart Pointer Control Block Memory Layout (`make_shared` vs `new`, `weak_ptr`) | [View Blueprint](languages/modern-cpp/diagrams/smart_pointer_control_block.jpg) |
+| **C++ & Python OOP** | C++ Virtual Table (Vtable/Vptr) Dynamic Dispatch Memory Layout | [View Blueprint](languages/oops/diagrams/vtable_memory_layout.jpg) |
+| **C++ & Python OOP** | Multiple Inheritance & Diamond Resolution (Virtual Base vs C3 MRO) | [View Blueprint](languages/oops/diagrams/diamond_inheritance_mro.jpg) |
+| **Python Internals** | CPython PyObject Header & Generational Cyclic GC (Gen 0/1/2) | [View Blueprint](languages/python/diagrams/cpython_gc_generations.jpg) |
+| **REST API Design** | Redis Idempotency Key Atomic Lock & Optimistic Concurrency Control (`ETag`) | [View Blueprint](system-design/rest-api-design/diagrams/rest_idempotency_locking.jpg) |
+
+---
+
 ## ⏱️ Fast-Track Interview Preparation Plans
 
 Preparing for an interview in days or weeks? Consult [INTERVIEW_PREPARATION.md](INTERVIEW_PREPARATION.md) for tailored schedules:

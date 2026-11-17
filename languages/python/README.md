@@ -22,6 +22,18 @@ Focuses on the Python data model, CPython internals, memory management, the GIL,
 
 ---
 
+## 🖼️ Architectural Blueprint: CPython Memory & Generational Cyclic GC
+
+![CPython Object Layout and Generational Cyclic Garbage Collector](diagrams/cpython_gc_generations.jpg)
+
+### Key Architectural Takeaways for Interviews:
+- **`PyObject` Header**: Every Python object has `ob_refcnt` (reference count) and `ob_type` (pointer to type descriptor).
+- **Dual Memory Reclamation System**:
+  - **Immediate Reference Counting**: Handles 99% of objects ($O(1)$ immediate deallocation when `ob_refcnt == 0`).
+  - **Generational Cyclic GC (Gen 0, Gen 1, Gen 2)**: Overcomes the circular reference problem (e.g. `obj_a.ref = obj_b; obj_b.ref = obj_a`). Runs periodically based on allocation thresholds (`gc.get_threshold()`). Surviving objects get promoted to older, less frequently collected generations.
+
+---
+
 ## 🛠️ Python Capstone Projects (`projects/`)
 
 1. **`01-async-rate-limiter`**: Token-bucket algorithm with `asyncio.sleep` and sliding window.
