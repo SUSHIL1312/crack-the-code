@@ -4,6 +4,9 @@ A high-yield, code-first curriculum focused purely on the modern C++ (C++17/20/2
 
 Zero academic fluff. Every module is structured around memory layouts, assembly implications, production code idioms, and live interview traps.
 
+> [!TIP]
+> **Dedicated OOP Deep Dive**: For complete C++ Object-Oriented Programming (encapsulation, abstraction, vtable assembly, object slicing, diamond virtual inheritance, and FAANG interview questions), visit **[`languages/oops/cpp/`](../oops/cpp/)**.
+
 ---
 
 ## 📚 Curriculum Structure

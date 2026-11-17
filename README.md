@@ -59,6 +59,7 @@ crack-the-code/
 │
 ├── languages/                          # Programming Languages Curriculum
 │   ├── README.md                       # Languages overview
+│   ├── oops/                           # 🏛️ Object-Oriented Programming (C++ & Python, Vtables, MRO, Diagrams)
 │   ├── modern-cpp/                     # High-Yield Modules + 5 Capstone Projects (C++17/20/23)
 │   └── python/                         # High-Yield Modules + 4 Capstone Projects (Python 3.12+)
 │
@@ -124,7 +125,15 @@ make help
 * **Async & Concurrency**: Asyncio event loop, `TaskGroup` structured concurrency, multiprocessing with shared memory.
 * **Projects**: Custom Iterators, Dynamic Plugin Framework, Memory Profiler, Async HTTP Client, CLI Tool.
 
-### 5. [System Design: REST API Architecture](system-design/rest-api-design/)
+### 5. [Object-Oriented Programming (OOP) Mastery](languages/oops/)
+* **Systems & Runtime Comparison**: Side-by-side analysis of Modern C++ (compiled, zero-overhead, explicit memory layout) vs Python (dynamic, CPython object model, runtime MRO).
+* **AI Architectural Visualizations**: Generated diagrams of C++ Vtable/Vptr dynamic dispatch and Diamond Problem resolution (Virtual Inheritance vs C3 Linearization).
+* **Modern C++**: Vtable memory offsets, assembly breakdown (`call *0x8(%rax)`), virtual destructor memory leak rules, object slicing mechanics, and CRTP/Concepts.
+* **Python**: `PyObject` C header, `__new__` vs `__init__`, C3 Linearization MRO, cooperative lateral `super()`, and `__slots__` 70% memory reduction.
+* **FAANG Tricky Interview Bank**: High-frequency questions and edge-case traps asked at Google, Meta, Apple, and Amazon.
+* **Automated Code Labs**: Runnable C++ and Python test suites (`make test`).
+
+### 6. [System Design: REST API Architecture](system-design/rest-api-design/)
 * **Core Principles**: Roy Fielding's 6 constraints, Safe vs Idempotent HTTP methods, resource-oriented URI modeling.
 * **Production Best Practices**: `Idempotency-Key` headers for payment safety, cursor/keyset pagination vs offset pagination, optimistic concurrency with `ETag` and `If-Match`, RFC 7807 Problem Details error schema, and token-bucket rate limiting.
 * **Case Study & Code**: Complete E-Commerce API design and fully runnable reference server (`rest_api_server_demo.py`) with automated test suite.

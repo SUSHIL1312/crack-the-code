@@ -4,6 +4,9 @@ A high-yield, internal-focused Python curriculum designed for software engineers
 
 Focuses on the Python data model, CPython internals, memory management, the GIL, asynchronous concurrency, and production patterns.
 
+> [!TIP]
+> **Dedicated OOP Deep Dive**: For complete Python Object-Oriented Programming (PyObject, `__new__` vs `__init__`, C3 Linearization MRO, cooperative `super()`, `__slots__` 70% memory reduction, metaclasses, and FAANG interview questions), visit **[`languages/oops/python/`](../oops/python/)**.
+
 ---
 
 ## 📚 Curriculum Structure

@@ -8,13 +8,24 @@ This section delivers an exhaustive, zero-to-advanced curriculum in two dominant
 
 ```
 languages/
+├── oops/            # 🏛️ Object-Oriented Programming Mastery (C++ vs Python, Vtables, MRO, AI Diagrams)
 ├── modern-cpp/      # High-Yield Modules + 5 Capstone Projects (C++17 / C++20 / C++23)
 └── python/          # High-Yield Modules + 4 Capstone Projects (Python 3.12+ / CPython Internals)
 ```
 
 ---
 
-## 1. [Modern C++](./modern-cpp/)
+## 1. [Object-Oriented Programming (OOP)](./oops/)
+A deep systems and runtime comparison of OOP across Modern C++ and Python:
+* **Architectural Visualizations**: AI-generated diagrams of C++ Vtable/Vptr dynamic dispatch and Diamond Problem resolution.
+* **Modern C++**: Vtable memory layout, assembly breakdown of `call *0x8(%rax)`, virtual destructors, object slicing, multiple inheritance pointer adjustments, CRTP & C++20 Concepts.
+* **Python**: `PyObject` C headers, `__new__` vs `__init__`, C3 Linearization (MRO), cooperative `super()`, `__slots__` 70% memory reduction, ABCs & Protocols.
+* **FAANG Tricky Questions**: High-frequency traps tested at Google, Meta, Apple, Amazon, and Microsoft.
+* **Interactive Code Labs**: Runnable C++ and Python test suites (`make test`).
+
+---
+
+## 2. [Modern C++](./modern-cpp/)
 C++ is the cornerstone of high-performance systems and low-latency engineering:
 * **Memory & Layout**: Struct padding, alignment, cache lines, raw pointers, and `const` permutations.
 * **Resource Ownership**: RAII, Rule of Five, copy-and-swap, move semantics, and perfect forwarding.
@@ -26,7 +37,7 @@ C++ is the cornerstone of high-performance systems and low-latency engineering:
 
 ---
 
-## 2. [Python](./python/)
+## 3. [Python](./python/)
 Taught with an uncompromising focus on CPython internals and production systems engineering:
 * **Data Model & Dunders**: Pass-by-sharing, mutability pitfalls, hashability vs equality, and dunder methods catalog.
 * **CPython Internals & GC**: `PyObject` headers, reference counting, and 3-generation cyclic garbage collector.

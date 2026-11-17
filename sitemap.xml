@@ -99,4 +99,32 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
+  <!-- Programming Languages: Python -->
+  <url>
+    <loc>https://github.com/SUSHIL1312/crack-the-code/tree/main/languages/python</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Object-Oriented Programming (OOP) Hub -->
+  <url>
+    <loc>https://github.com/SUSHIL1312/crack-the-code/tree/main/languages/oops</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://github.com/SUSHIL1312/crack-the-code/tree/main/languages/oops/cpp</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://github.com/SUSHIL1312/crack-the-code/tree/main/languages/oops/python</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
