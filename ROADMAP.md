@@ -14,33 +14,34 @@ This roadmap provides an **authoritative, sequential path** to master Operating 
 ## 🧭 The 5-Phase Progression Blueprint
 
 ```mermaid
-graph TD
-    subgraph Phase 1: Core CS Foundations
-        A1[OS: Memory, Paging & Process Architecture] --> A2[Networks: OSI, TCP Internals & Sockets]
+flowchart TD
+    subgraph P1 ["Phase 1: Core CS Foundations"]
+        A1["OS: Memory, Paging & Process Architecture"] --> A2["Networks: OSI, TCP Internals & Sockets"]
     end
 
-    subgraph Phase 2: Object-Oriented Programming Mastery
-        B1[C++ OOP: Vtables, Object Slicing & Diamonds] --> B2[Python OOP: PyObject, C3 MRO & Slots]
+    subgraph P2 ["Phase 2: Object-Oriented Programming Mastery"]
+        B1["C++ OOP: Vtables, Slicing & Diamonds"] --> B2["Python OOP: PyObject, MRO & Slots"]
     end
 
-    subgraph Phase 3: Concurrency & Runtime Internals
-        C1[Synchronization Masterclass: Futex, Mutex vs Semaphore] --> C2[C++ Atomics & Memory Model]
-        C1 --> C3[Python GIL, Asyncio & Multiprocessing]
+    subgraph P3 ["Phase 3: Concurrency & Runtime Internals"]
+        C1["Synchronization Masterclass: Futex, Mutex vs Semaphore"] --> C2["C++ Atomics & Memory Model"]
+        C1 --> C3["Python GIL, Asyncio & Multiprocessing"]
     end
 
-    subgraph Phase 4: Distributed System Design & REST APIs
-        D1[REST Design: Idempotency Keys, Cursor Pagination & ETags] --> D2[Runnable REST Reference Server]
+    subgraph P4 ["Phase 4: Distributed System Design & REST APIs"]
+        D1["REST Design: Idempotency Keys, Pagination & ETags"] --> D2["Runnable REST Reference Server"]
     end
 
-    subgraph Phase 5: Capstone Systems & FAANG Drills
-        E1[Build 5 C++ / 4 Python Capstone Systems] --> E2[Company Question Banks & Mock Drills]
-        E2 --> E3[Offer Ready 🚀]
+    subgraph P5 ["Phase 5: Capstone Systems & FAANG Drills"]
+        E1["Build 5 C++ & 4 Python Capstone Systems"] --> E2["Company Question Banks & Mock Drills"]
+        E2 --> E3["Offer Ready 🚀"]
     end
 
-    Phase 1 --> Phase 2
-    Phase 2 --> Phase 3
-    Phase 3 --> Phase 4
-    Phase 4 --> Phase 5
+    A2 --> B1
+    B2 --> C1
+    C2 --> D1
+    C3 --> D1
+    D2 --> E1
 ```
 
 ---
