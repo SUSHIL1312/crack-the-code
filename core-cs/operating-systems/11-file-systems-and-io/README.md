@@ -1,5 +1,10 @@
 # Module 11: File Systems & Storage I/O
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 10: Linux Syscalls](../10-linux-internals-syscalls/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 12: IPC & Shared Memory](../12-ipc-and-shared-memory/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Understanding how storage drives, filesystems, and the operating system page cache interact is critical for building reliable databases, caching tiers, and distributed storage systems.
 
 ---
@@ -29,3 +34,12 @@ Understanding how storage drives, filesystems, and the operating system page cac
    * What happens when you delete an open file? `fsync` vs `fdatasync`, Hard vs Soft links, why databases use Direct I/O.
 7. [Common Mistakes](common-mistakes.md)
    * Assuming `write()` persists data to disk, ignoring `fsync()` error codes.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 10: Linux Syscalls](../10-linux-internals-syscalls/README.md) | [Operating Systems Hub](../README.md) | **[Module 12: IPC & Shared Memory](../12-ipc-and-shared-memory/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

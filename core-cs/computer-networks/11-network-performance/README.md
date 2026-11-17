@@ -1,5 +1,10 @@
 # Module 11: Network Performance & Optimization
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 10: TLS & Security](../10-tls-and-security/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 12: Network Programming](../12-network-programming/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 High-performance distributed systems, low-latency financial exchanges, and global cloud architectures require rigorous optimization of network pipelines. Raw bandwidth alone cannot solve performance bottlenecks; systems engineers must understand the mathematical constraints of the Bandwidth-Delay Product (BDP), mitigate bufferbloat, tune Linux kernel socket buffers, deploy Content Delivery Network (CDN) edge architectures, and optimize TCP handshakes.
 
@@ -32,3 +37,12 @@ In this module, you will master the physics of network throughput, kernel sysctl
 - `solutions/`: Reference engineering solutions.
 - `interview-questions.md`: FAANG interview questions (e.g. "How does a CDN reduce latency?", "Why does a 1 Gbps link only achieve 10 Mbps over a trans-pacific connection?").
 - `common-mistakes.md`: Blindly maxing out socket buffers causing kernel OOM, setting static window sizes instead of autotuning.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 10: TLS & Security](../10-tls-and-security/README.md) | [Computer Networks Hub](../README.md) | **[Module 12: Network Programming](../12-network-programming/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

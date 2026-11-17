@@ -1,5 +1,10 @@
 # Module 01: Python Data Model and Dunder Methods
 
+<!-- Chapter Navigation Header -->
+| ⬅️ Start of Track | 🏠 [Python Hub](../README.md) | [02: CPython Internals & GC](../02-cpython-internals-and-gc/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. Pass-by-Object-Reference (Call by Sharing)
 In Python, variables are not memory boxes; they are **names bound to objects in the heap**:
 - **Immutable objects** (`int`, `float`, `str`, `tuple`, `frozenset`): Modifications produce a new object in memory.
@@ -36,3 +41,12 @@ def append_item(item, target_list=None):
 | `__eq__(self, other)` | Equality comparison `==` | If overridden, Python sets `__hash__ = None` unless explicitly defined! |
 | `__hash__(self)` | Returns integer hash for dict/set keys | Only immutable objects whose equality never changes should be hashable. |
 | `__getitem__(self, key)` | Indexing & slicing `obj[key]` | Enables square bracket indexing and automatically supports iteration! |
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| None (Track Start) | [Python Hub](../README.md) | **[02: CPython Internals & GC](../02-cpython-internals-and-gc/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

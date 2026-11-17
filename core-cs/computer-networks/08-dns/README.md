@@ -1,5 +1,10 @@
 # Module 08: The Domain Name System (DNS)
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 07: Sockets Programming](../07-sockets-programming/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 09: HTTP & HTTPS](../09-http-and-https/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 The Domain Name System (DNS) is a globally distributed, hierarchical, fault-tolerant database that maps human-readable domain names (e.g., `api.google.com`) to machine-routable IP addresses (e.g., `142.250.190.46` or `2607:f8b0:4005:808::200e`). It is the very first step in virtually every internet interaction.
 
@@ -31,3 +36,12 @@ In this module, you will master the domain hierarchy, iterative vs recursive res
 - `solutions/`: Reference solutions.
 - `interview-questions.md`: FAANG interview questions (e.g. "What happens when you type a URL into a browser?", "Why can't you put a CNAME on the root apex domain?").
 - `common-mistakes.md`: Long TTL traps during migrations, CNAME apex conflicts, DNS resolution blocking event loops.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 07: Sockets Programming](../07-sockets-programming/README.md) | [Computer Networks Hub](../README.md) | **[Module 09: HTTP & HTTPS](../09-http-and-https/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

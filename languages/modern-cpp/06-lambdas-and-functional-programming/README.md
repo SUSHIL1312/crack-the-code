@@ -1,5 +1,10 @@
 # Module 06: Lambdas and Functional Programming in C++
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [05: Templates, SFINAE & Concepts](../05-templates-sfinae-and-concepts/README.md) | 🏠 [Modern C++ Hub](../README.md) | [07: Concurrency & Atomics](../07-concurrency-multithreading-and-atomics/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. Closure Internals
 A lambda is syntactic sugar for a compiler-generated anonymous `struct`:
 - Value captures (`[x]`) become member variables initialized via copy.
@@ -24,3 +29,12 @@ int (*fp)(int, int) = add; // Implicit decay!
   - Closures larger than the buffer trigger **dynamic heap allocation** (`operator new`)!
   - Invoking `std::function` requires an indirect virtual call (cannot be inlined by the compiler).
 - **In performance-critical code**: Use generic templates (`template <typename F> void invoke(F&& f)`) which inline 100% with zero heap allocation and zero branch misprediction!
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [05: Templates, SFINAE & Concepts](../05-templates-sfinae-and-concepts/README.md) | [Modern C++ Hub](../README.md) | **[07: Concurrency & Atomics](../07-concurrency-multithreading-and-atomics/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

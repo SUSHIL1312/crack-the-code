@@ -5,6 +5,9 @@ A high-yield, code-first curriculum focused purely on the modern C++ (C++17/20/2
 Zero academic fluff. Every module is structured around memory layouts, assembly implications, production code idioms, and live interview traps.
 
 > [!TIP]
+> **📖 Start Reading Here**: Begin reading sequentially with **[Module 01: Memory Layout & Pointers](01-memory-layout-and-pointers/README.md)**. Use the **Next Chapter ➡️** buttons at the bottom of each module to progress through all 9 chapters!
+
+> [!TIP]
 > **Coming from C++14?** Check out the **[C++14 to C++20 Migration & Translation Guide](CPP14_TO_CPP20_BRIDGE.md)** with side-by-side code comparisons covering string_view, span, spaceship operator `<=>`, optional, and concepts!
 
 > [!TIP]

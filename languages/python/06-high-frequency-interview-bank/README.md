@@ -1,5 +1,10 @@
 # Module 06: Python FAANG Technical Interview Question Bank
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [05: Decorators, Generators & Metaprogramming](../05-decorators-generators-and-metaprogramming/README.md) | 🏠 [Python Hub](../README.md) | [Python Capstones](../projects/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ### Q1: What is the Global Interpreter Lock (GIL), and why can't Python threads speed up CPU-bound operations?
 **Answer**:
 - The GIL is a mutual exclusion lock in CPython that prevents multiple native OS threads from executing Python bytecodes concurrently.
@@ -56,3 +61,12 @@
 - A descriptor is any object that defines at least one of `__get__`, `__set__`, or `__delete__` methods.
 - When an attribute of a class is a descriptor, attribute access on class instances triggers the descriptor methods instead of standard dictionary lookup.
 - Descriptors power `@property`, `@classmethod`, `@staticmethod`, and ORMs (like Django and SQLAlchemy model fields).
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [05: Decorators, Generators & Metaprogramming](../05-decorators-generators-and-metaprogramming/README.md) | [Python Hub](../README.md) | **[Python Capstones](../projects/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

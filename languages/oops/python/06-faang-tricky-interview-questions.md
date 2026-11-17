@@ -1,5 +1,10 @@
 # 🐍 Module 06: Top 10 FAANG Tricky Python OOP Interview Questions
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [05: Metaclasses & Class Creation](05-metaclasses-and-class-creation.md) | 🏠 [Python OOP Guide](README.md) | End of Track 🏁 |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 These 10 questions test the most common traps and internal mechanics of Python Object-Oriented Programming asked at Google, Meta, Amazon, Apple, and Netflix.
 
 ---
@@ -258,3 +263,12 @@ s = Service()
   ```
 * **Why**:
   When you write `Service()`, you are "calling" the class object `Service`. Since `Service` is an instance of `Meta`, Python invokes `Meta.__call__`. Inside `Meta.__call__`, it orchestrates `Service.__new__` followed by `Service.__init__`.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [05: Metaclasses & Class Creation](05-metaclasses-and-class-creation.md) | [Python OOP Guide](README.md) | Track Completed 🏁 |
+<!-- /Chapter Navigation Footer -->
+

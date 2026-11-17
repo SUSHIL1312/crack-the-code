@@ -5,6 +5,9 @@ A high-yield, internal-focused Python curriculum designed for software engineers
 Focuses on the Python data model, CPython internals, memory management, the GIL, asynchronous concurrency, and production patterns.
 
 > [!TIP]
+> **📖 Start Reading Here**: Begin reading sequentially with **[Module 01: Data Model & Dunder Methods](01-data-model-and-dunder-methods/README.md)**. Use the **Next Chapter ➡️** buttons at the bottom of each module to progress through all 6 chapters!
+
+> [!TIP]
 > **Dedicated OOP Deep Dive**: For complete Python Object-Oriented Programming (PyObject, `__new__` vs `__init__`, C3 Linearization MRO, cooperative `super()`, `__slots__` 70% memory reduction, metaclasses, and FAANG interview questions), visit **[`languages/oops/python/`](../oops/python/)**.
 
 ---

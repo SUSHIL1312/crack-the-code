@@ -1,5 +1,10 @@
 # 🏛️ Module 01: The Four Pillars of OOP in Modern C++
 
+<!-- Chapter Navigation Header -->
+| ⬅️ Start of Track | 🏠 [C++ OOP Guide](README.md) | [02: Virtual Functions & Vtables](02-virtual-functions-and-vtables.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 In systems programming, the four classical OOP pillars—**Encapsulation, Abstraction, Inheritance, and Polymorphism**—are tightly coupled with **memory layout, cache locality, compiler inlining, and binary interfaces (ABI)**.
 
 ---
@@ -163,3 +168,12 @@ graph TD
 | **Runtime Overhead** | Zero overhead. Full compiler inlining | ~1-2 ns pointer load + indirect jump; potential cache miss |
 | **Object Size Overhead**| 0 extra bytes | +8 bytes (`vptr`) per object |
 | **Flexibility** | Types must be known at compile time | Decoupled; can load shared libraries / plugins dynamically |
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| None (Track Start) | [C++ OOP Guide](README.md) | **[02: Virtual Functions & Vtables](02-virtual-functions-and-vtables.md)** |
+<!-- /Chapter Navigation Footer -->
+

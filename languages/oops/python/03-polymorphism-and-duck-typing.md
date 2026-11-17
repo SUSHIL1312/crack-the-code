@@ -1,5 +1,10 @@
 # 🐍 Module 03: Polymorphism, Duck Typing, ABCs & Protocols
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [02: Inheritance, MRO & super()](02-inheritance-mro-and-super.md) | 🏠 [Python OOP Guide](README.md) | [04: Memory Optimization & __slots__](04-memory-optimization-slots.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Python achieves polymorphism through three distinct mechanisms ranging from dynamic runtime inspection to modern static type checking: **Dynamic Duck Typing, Abstract Base Classes (ABCs), and Structural Protocols**.
 
 ---
@@ -115,3 +120,12 @@ print(isinstance(MarkdownDocument(), Renderable)) # True!
 | **Third-Party Classes** | Requires explicit `.register()` call | Automatic if methods match |
 | **Code Sharing** | Supports concrete helper method implementation | Pure interface contract (no shared implementation) |
 | **Enforcement** | Fails at runtime during `__init__` | Verified ahead-of-time by static type checkers (mypy/pyright) |
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [02: Inheritance, MRO & super()](02-inheritance-mro-and-super.md) | [Python OOP Guide](README.md) | **[04: Memory Optimization & __slots__](04-memory-optimization-slots.md)** |
+<!-- /Chapter Navigation Footer -->
+

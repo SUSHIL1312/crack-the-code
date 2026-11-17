@@ -1,5 +1,10 @@
 # Module 06: Paging, Segmentation & Page Replacement
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 05: Virtual Memory](../05-virtual-memory/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 07: Synchronization Primitives](../07-synchronization-primitives/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 When physical DRAM is saturated, the operating system must make critical decisions: which pages should remain in high-speed RAM, and which pages should be evicted to disk? This module explores paging vs segmentation, page replacement algorithms, Belady's anomaly, and system thrashing.
 
 ---
@@ -30,3 +35,12 @@ When physical DRAM is saturated, the operating system must make critical decisio
    * What is Belady's Anomaly? How does Linux avoid thrashing? Clock vs LRU.
 7. [Common Mistakes](common-mistakes.md)
    * Misunderstanding swap usage, ignoring the page cache when measuring memory.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 05: Virtual Memory](../05-virtual-memory/README.md) | [Operating Systems Hub](../README.md) | **[Module 07: Synchronization Primitives](../07-synchronization-primitives/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

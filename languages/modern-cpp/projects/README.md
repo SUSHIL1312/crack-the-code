@@ -1,5 +1,10 @@
 # Modern C++ Capstone Projects
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [09: High-Frequency Interview Bank](../09-high-frequency-interview-bank/README.md) | 🏠 [Modern C++ Hub](../README.md) | End of Track 🏁 |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 This directory contains the 5 most frequent live coding project challenges asked in senior/staff software engineer C++ interviews at Google, Apple, Meta, Bloomberg, and NVIDIA.
 
 ---
@@ -13,3 +18,12 @@ This directory contains the 5 most frequent live coding project challenges asked
 | **[03-concurrent-bounded-queue](03-concurrent-bounded-queue/)** | Concurrency | Condition variable wait loops, mutex locking, spurious wakeups, graceful shutdown. |
 | **[04-concurrent-lru-cache](04-concurrent-lru-cache/)** | Data Structures & Locks | $O(1)$ Hash table + Doubly linked list, reader-writer lock (`std::shared_mutex`). |
 | **[05-thread-pool](05-thread-pool/)** | Systems Architecture | Worker threads, work stealing/task queue, `std::future` and `std::packaged_task`. |
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [09: High-Frequency Interview Bank](../09-high-frequency-interview-bank/README.md) | [Modern C++ Hub](../README.md) | Track Completed 🏁 |
+<!-- /Chapter Navigation Footer -->
+

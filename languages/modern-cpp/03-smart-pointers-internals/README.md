@@ -1,5 +1,10 @@
 # Module 03: Smart Pointers Internals
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [02: RAII & Rule of Five](../02-raii-and-rule-of-five/README.md) | 🏠 [Modern C++ Hub](../README.md) | [04: Polymorphism & Vtables](../04-polymorphism-and-vtables/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. `std::unique_ptr` Internals
 - **Ownership**: Exclusive, single owner.
 - **Overhead**: `sizeof(std::unique_ptr<T>) == sizeof(T*)` (Zero overhead!).
@@ -34,3 +39,12 @@ If Object A holds a `shared_ptr` to Object B, and Object B holds a `shared_ptr` 
 - **Memory Leak!**
 - Solution: Make one of the references a `std::weak_ptr`.
 - `weak_ptr` observes an object without incrementing `use_count`. Call `.lock()` to safely acquire a temporary `shared_ptr`.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [02: RAII & Rule of Five](../02-raii-and-rule-of-five/README.md) | [Modern C++ Hub](../README.md) | **[04: Polymorphism & Vtables](../04-polymorphism-and-vtables/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

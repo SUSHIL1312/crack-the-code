@@ -1,5 +1,10 @@
 # Module 05: Decorators, Generators & Metaprogramming
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [04: Asyncio & Structured Concurrency](../04-asyncio-and-structured-concurrency/README.md) | 🏠 [Python Hub](../README.md) | [06: Python FAANG Interview Bank](../06-high-frequency-interview-bank/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. Closures & Decorator Mechanics
 A decorator is a callable that takes a function as an argument and returns a replacement callable.
 - **`functools.wraps`**: Crucial! Copies `__name__`, `__doc__`, and `__annotations__` from original function to wrapper. Without it, introspective frameworks (FastAPI, Flask, pytest) break.
@@ -17,3 +22,12 @@ Generators (`yield`) turn functions into stateful iterators that pause execution
 ## 3. Descriptors (`__get__`, `__set__`, `__delete__`)
 The underlying mechanism powering properties, methods, `classmethod`, and ORMs (Django/SQLAlchemy).
 If an object defines `__get__` or `__set__`, Python invokes that method whenever the attribute is accessed on an instance of the owner class.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [04: Asyncio & Structured Concurrency](../04-asyncio-and-structured-concurrency/README.md) | [Python Hub](../README.md) | **[06: Python FAANG Interview Bank](../06-high-frequency-interview-bank/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Module 04: Memory Management
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 03: Context Switching](../03-context-switching/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 05: Virtual Memory](../05-virtual-memory/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Memory management bridges the gap between raw physical RAM hardware and the structured memory allocations required by application software. Mastering allocation algorithms, fragmentation, and cache locality is fundamental to building high-performance systems.
 
 ---
@@ -29,3 +34,12 @@ Memory management bridges the gap between raw physical RAM hardware and the stru
    * What happens inside `malloc()`? Memory alignment traps, why sequential access beats random access.
 7. [Common Mistakes](common-mistakes.md)
    * Use-after-free, double-free, forgetting memory alignment requirements, and false sharing.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 03: Context Switching](../03-context-switching/README.md) | [Operating Systems Hub](../README.md) | **[Module 05: Virtual Memory](../05-virtual-memory/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

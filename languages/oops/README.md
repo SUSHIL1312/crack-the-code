@@ -42,6 +42,11 @@ When two derived classes inherit from a common base and are subsequently inherit
 
 ---
 
+> [!TIP]
+> **📖 Choose Your Learning Track**:
+> - **Modern C++ Track**: Start with **[Chapter 01: Four Pillars in Modern C++](cpp/01-four-pillars-in-cpp.md)** $\to$ follow the **Next Chapter ➡️** buttons through all 6 chapters.
+> - **Python Track**: Start with **[Chapter 01: Python Data Model & Object Creation](python/01-python-data-model-and-classes.md)** $\to$ follow the **Next Chapter ➡️** buttons through all 6 chapters.
+
 ## 📂 Curriculum Navigation
 
 ```

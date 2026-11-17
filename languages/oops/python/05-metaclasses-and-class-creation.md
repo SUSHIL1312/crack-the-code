@@ -1,5 +1,10 @@
 # 🐍 Module 05: Metaclasses & Class Creation Hooks
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [04: Memory Optimization & __slots__](04-memory-optimization-slots.md) | 🏠 [Python OOP Guide](README.md) | [06: FAANG Tricky Questions](06-faang-tricky-interview-questions.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 In Python, classes are first-class runtime objects. **A metaclass is the class of a class**:
 - An object is an instance of a **class**.
 - A class is an instance of a **metaclass**.
@@ -97,3 +102,12 @@ print(PluginBase.registry)
 
 > [!TIP]
 > **FAANG Recommendation**: Prefer `__init_subclass__` for class validation and plugin registries. Reserve full metaclasses only when you need to intercept attribute dictionary creation (`__prepare__`) or override instance creation (`__call__`).
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [04: Memory Optimization & __slots__](04-memory-optimization-slots.md) | [Python OOP Guide](README.md) | **[06: FAANG Tricky Questions](06-faang-tricky-interview-questions.md)** |
+<!-- /Chapter Navigation Footer -->
+

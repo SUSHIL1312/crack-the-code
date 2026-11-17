@@ -1,5 +1,10 @@
 # Module 02: CPython Internals & Garbage Collection
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [01: Data Model & Dunder Methods](../01-data-model-and-dunder-methods/README.md) | 🏠 [Python Hub](../README.md) | [03: GIL & Concurrency](../03-gil-and-concurrency/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. PyObject Structure & Reference Counting
 In the CPython C runtime, every Python object begins with the `PyObject` header:
 ```c
@@ -38,3 +43,12 @@ To reclaim cyclic leaks, CPython runs a secondary **Generational Cyclic Garbage 
   - **Generation 1**: Survivors of Gen 0 collection. Collected every 10 Gen 0 collections.
   - **Generation 2**: Long-lived objects (module globals, long-lived caches). Collected least frequently (every 10 Gen 1 collections).
 - **Tri-Color Algorithm**: CPython tracks pointer references between container objects (`list`, `dict`, `set`, custom classes). It subtracts internal cross-references: if an isolated graph of cyclic objects has 0 external references, the entire circular cluster is reclaimed to the object pool!
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [01: Data Model & Dunder Methods](../01-data-model-and-dunder-methods/README.md) | [Python Hub](../README.md) | **[03: GIL & Concurrency](../03-gil-and-concurrency/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

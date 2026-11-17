@@ -1,5 +1,10 @@
 # REST API Design: FAANG Interview Questions & Answers
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [05: End-to-End Case Study](05-end-to-end-design-case-study.md) | 🏠 [REST API Design Hub](README.md) | End of Track 🏁 |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ### Q1: What is the fundamental difference between `PUT` and `PATCH`, and what are the implications of choosing one over the other?
 **Answer**:
 - **`PUT` (Complete Replacement)**: Semantically replaces the target resource entirely with the provided payload. If fields are omitted from the request body, the server treats them as intentionally deleted or reset to their default values. `PUT` is strictly **idempotent**.
@@ -57,3 +62,12 @@
    - When breaking changes are unavoidable (e.g. data type change or architectural rewrite), release a new version prefix `/v2/`.
    - Maintain the `/v1/` routing layer through an API gateway (e.g. Envoy/Kong) that proxies requests or translates them to internal services.
    - Set an explicit deprecation timeline with standard headers: `Sunset: Wed, 11 Nov 2026 00:00:00 GMT` and `Deprecation: true`.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [05: End-to-End Case Study](05-end-to-end-design-case-study.md) | [REST API Design Hub](README.md) | Track Completed 🏁 |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Module 03: Ethernet, ARP, and Switching
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 02: IP Subnetting](../02-ip-addressing-and-subnetting/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 04: Transport Layer](../04-transport-layer/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 While the Network Layer (IP) is responsible for end-to-end routing across the global Internet, data can only physically move from one node to the next across local links using Data Link Layer (Layer 2) protocols. Ethernet is the ubiquitous standard for wired local area networks (LANs) and datacenter fabrics.
 
@@ -29,3 +34,12 @@ In this module, you will master the mechanics of Ethernet framing, 48-bit MAC ad
 - `solutions/`: Reference walkthroughs and answers.
 - `interview-questions.md`: FAANG interview questions (e.g. "What happens when Host A sends a packet to Host B on a different subnet?", "ARP spoofing prevention").
 - `common-mistakes.md`: Broadcast storms, assuming ARP crosses routers, confusing MAC learning with routing.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 02: IP Subnetting](../02-ip-addressing-and-subnetting/README.md) | [Computer Networks Hub](../README.md) | **[Module 04: Transport Layer](../04-transport-layer/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

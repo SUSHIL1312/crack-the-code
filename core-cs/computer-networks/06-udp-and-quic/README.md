@@ -1,5 +1,10 @@
 # Module 06: UDP, Head-of-Line Blocking, and QUIC (HTTP/3)
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 05: TCP Internals](../05-tcp-internals/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 07: Sockets Programming](../07-sockets-programming/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 For over 30 years, TCP powered nearly all web traffic. However, modern interactive mobile applications exposed fundamental architectural limitations in TCP: multi-RTT connection handshake latency, connection breakage during Wi-Fi to cellular handoffs, middlebox protocol ossification, and **Transport-Layer Head-of-Line (HoL) Blocking** in multiplexed protocols like HTTP/2.
 
@@ -32,3 +37,12 @@ In this module, you will master the mechanics of UDP, dissect the Head-of-Line b
 - `solutions/`: Complete solutions and calculations.
 - `interview-questions.md`: FAANG interview questions (e.g. "Why did Google build QUIC on UDP instead of creating a new IP protocol?", "Connection migration mechanics").
 - `common-mistakes.md`: Believing QUIC is unreliable because it uses UDP, confusing HTTP/2 stream multiplexing with HTTP/3.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 05: TCP Internals](../05-tcp-internals/README.md) | [Computer Networks Hub](../README.md) | **[Module 07: Sockets Programming](../07-sockets-programming/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

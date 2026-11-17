@@ -1,5 +1,10 @@
 # Module 05: Templates, SFINAE & C++20 Concepts
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [04: Polymorphism & Vtables](../04-polymorphism-and-vtables/README.md) | 🏠 [Modern C++ Hub](../README.md) | [06: Lambdas & Functional Programming](../06-lambdas-and-functional-programming/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. What is SFINAE? (The C++14 Approach)
 **SFINAE** stands for **Substitution Failure Is Not An Error**.
 - When the compiler tries to deduce template arguments for a function overload, if a substitution fails in the signature, the compiler simply drops that overload from the candidate set without issuing a compilation error.
@@ -51,3 +56,12 @@ auto sum(Args... args) {
 }
 ```
 Supported fold operators: `+`, `-`, `*`, `/`, `&&`, `||`, `,`.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [04: Polymorphism & Vtables](../04-polymorphism-and-vtables/README.md) | [Modern C++ Hub](../README.md) | **[06: Lambdas & Functional Programming](../06-lambdas-and-functional-programming/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

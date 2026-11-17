@@ -1,5 +1,10 @@
 # Module 04: The Transport Layer
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 03: Ethernet, ARP & Switching](../03-ethernet-arp-and-switching/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 05: TCP Internals](../05-tcp-internals/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 While the Network Layer (IP) provides host-to-host packet delivery across the global Internet, a host runs hundreds of concurrent processes—web browsers, background daemons, database connections, and streaming media. The **Transport Layer (Layer 4)** provides **process-to-process communication**, turning raw host-level packet delivery into dedicated, multiplexed application communication channels.
 
@@ -28,3 +33,12 @@ In this module, you will master port numbers, transport layer multiplexing/demul
 - `solutions/`: Step-by-step solutions.
 - `interview-questions.md`: FAANG interview questions (e.g., "Can two different TCP connections share the exact same port number?").
 - `common-mistakes.md`: Ephemeral port exhaustion, forgetting pseudo-header in checksums, expecting UDP to preserve message ordering.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 03: Ethernet, ARP & Switching](../03-ethernet-arp-and-switching/README.md) | [Computer Networks Hub](../README.md) | **[Module 05: TCP Internals](../05-tcp-internals/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Computer Networks Capstone Projects
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 12: Network Programming](../12-network-programming/README.md) | 🏠 [Computer Networks Hub](../README.md) | End of Track 🏁 |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 This directory contains 7 production-grade, hands-on networking projects designed to solidify systems programming and low-level networking concepts.
 
 Each project is self-contained with its own source code, build configuration (`Makefile`), and automated verification tests.
@@ -29,3 +34,12 @@ cd 01-tcp-chat-app
 make
 make run
 ```
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 12: Network Programming](../12-network-programming/README.md) | [Computer Networks Hub](../README.md) | Track Completed 🏁 |
+<!-- /Chapter Navigation Footer -->
+

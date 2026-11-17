@@ -2,6 +2,9 @@
 
 This curriculum covers the complete networking stack from physical and data-link framing to the transport layer (TCP/UDP/QUIC), socket programming, TLS 1.3 cryptographic handshakes, HTTP/1.1/2/3, DNS, and high-performance network programming for FAANG-level engineering interviews.
 
+> [!TIP]
+> **📖 Start Reading Here**: Begin your journey with **[Module 00: Networking Fundamentals](00-networking-fundamentals/README.md)**. Use the **Next Chapter ➡️** buttons at the bottom of each module to progress through all 13 chapters sequentially!
+
 ---
 
 ## 🖼️ Architectural Visualizations

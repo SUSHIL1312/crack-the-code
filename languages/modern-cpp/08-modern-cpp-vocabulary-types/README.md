@@ -1,5 +1,10 @@
 # Module 08: Modern C++ Vocabulary Types (C++17 / C++20 / C++23)
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [07: Concurrency & Atomics](../07-concurrency-multithreading-and-atomics/README.md) | 🏠 [Modern C++ Hub](../README.md) | [09: High-Frequency Interview Bank](../09-high-frequency-interview-bank/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. `std::string_view` and `std::span` (Zero-Copy Views)
 
 ### 🔴 The C++14 Way:
@@ -81,3 +86,12 @@ Deterministic error handling without exception overhead:
 - Returns either a valid result `T` or an unexpected error `E`.
 - Supports monadic chaining: `.and_then()`, `.transform()`, `.or_else()`.
 - Replaces output parameters and error code enums.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [07: Concurrency & Atomics](../07-concurrency-multithreading-and-atomics/README.md) | [Modern C++ Hub](../README.md) | **[09: High-Frequency Interview Bank](../09-high-frequency-interview-bank/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

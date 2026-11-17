@@ -1,5 +1,10 @@
 # Module 01: OSI and TCP/IP Layer Models
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 00: Networking Fundamentals](../00-networking-fundamentals/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 02: IP Subnetting](../02-ip-addressing-and-subnetting/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 Network communication is architected into layered abstractions. The 7-layer OSI (Open Systems Interconnection) reference model provides a theoretical framework for protocol separation of concerns, while the 4/5-layer TCP/IP protocol suite defines the pragmatic architecture that actually powers the global Internet.
 
@@ -39,3 +44,12 @@ In this module, you will master the mechanics of packet encapsulation, decapsula
 - `solutions/`: Reference dissection solutions.
 - `interview-questions.md`: FAANG interview questions (e.g. "Where do TLS, HTTP/2, and WebSockets sit in OSI?", "Why does TCP/IP dominate over OSI?").
 - `common-mistakes.md`: Header size miscalculations, ignoring big-endian network byte order, confusing presentation/session responsibilities.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 00: Networking Fundamentals](../00-networking-fundamentals/README.md) | [Computer Networks Hub](../README.md) | **[Module 02: IP Subnetting](../02-ip-addressing-and-subnetting/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Module 02: RAII, Rule of Five & Move Semantics
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [01: Memory Layout & Pointers](../01-memory-layout-and-pointers/README.md) | 🏠 [Modern C++ Hub](../README.md) | [03: Smart Pointers Internals](../03-smart-pointers-internals/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. What is RAII?
 **RAII (Resource Acquisition Is Initialization)** binds resource lifetime to object lifetime:
 - Resource (heap memory, socket, mutex lock, file descriptor) is acquired in the **constructor**.
@@ -47,3 +52,12 @@ public:
 ## 3. `std::move` vs `std::forward`
 - `std::move(x)`: An unconditional cast to `T&&` (rvalue reference). It signals: *"I don't need this object anymore, steal its guts."*
 - `std::forward<T>(x)`: A conditional cast used exclusively in template forwarding references (`T&&`). Casts to rvalue *only* if the original argument was an rvalue.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [01: Memory Layout & Pointers](../01-memory-layout-and-pointers/README.md) | [Modern C++ Hub](../README.md) | **[03: Smart Pointers Internals](../03-smart-pointers-internals/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Module 12: Inter-Process Communication (IPC) and Shared Memory
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 11: File Systems & I/O](../11-file-systems-and-io/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 13: Advanced OS Concepts](../13-advanced-os-concepts/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 Because operating systems isolate processes in separate virtual address spaces to ensure security and fault containment, processes cannot directly read or write each other's memory. Inter-Process Communication (IPC) provides kernel-mediated and hardware-assisted mechanisms for processes to coordinate, exchange data, and share state.
 
@@ -27,3 +32,12 @@ In this module, you will master the full spectrum of IPC mechanisms, from tradit
 - `solutions/`: Production-grade solutions and benchmarks.
 - `interview-questions.md`: FAANG interview deep-dives (e.g., Chrome multi-process architecture IPC, shared memory vs socket throughput, fd passing).
 - `common-mistakes.md`: Critical pitfalls like memory leaks in `/dev/shm`, deadlock when a process dies holding a process-shared mutex, and pipe deadlocks.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 11: File Systems & I/O](../11-file-systems-and-io/README.md) | [Operating Systems Hub](../README.md) | **[Module 13: Advanced OS Concepts](../13-advanced-os-concepts/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

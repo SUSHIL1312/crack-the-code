@@ -2,6 +2,9 @@
 
 This curriculum takes software engineers from fundamental hardware interactions to Linux kernel architecture, multi-core concurrency, virtual memory subsystems, and production-grade systems programming using Modern C++ (C++17/C++20) and POSIX/Linux APIs.
 
+> [!TIP]
+> **📖 Start Reading Here**: Begin your journey with **[Module 00: Computer Fundamentals](00-computer-fundamentals/README.md)**. Follow the **Next Chapter ➡️** buttons at the bottom of each module to progress through all 14 chapters sequentially!
+
 ---
 
 ## 🖼️ Architectural Visualizations

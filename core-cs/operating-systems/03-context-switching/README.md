@@ -1,5 +1,10 @@
 # Module 03: Context Switching
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 02: CPU Scheduling](../02-cpu-scheduling/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 04: Memory Management](../04-memory-management/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Context switching is the mechanism that allows a single CPU core to be shared among multiple threads and processes. While conceptually simple, its direct and indirect costs dictate system throughput, cache behavior, and latency limits.
 
 ---
@@ -26,3 +31,12 @@ Context switching is the mechanism that allows a single CPU core to be shared am
    * FAANG interview questions: Mode switch vs Context switch, TLB shootdowns, cache warm-up penalties.
 7. [Common Mistakes](common-mistakes.md)
    * Confusing mode switches with context switches, over-threading workloads beyond hardware core counts.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 02: CPU Scheduling](../02-cpu-scheduling/README.md) | [Operating Systems Hub](../README.md) | **[Module 04: Memory Management](../04-memory-management/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

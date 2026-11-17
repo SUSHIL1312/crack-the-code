@@ -2,6 +2,9 @@
 
 Welcome to the comprehensive, production-grade guide to **REST API Design**. This module covers the end-to-end principles, architectural decisions, and production trade-offs tested in FAANG system design and backend engineering interviews.
 
+> [!TIP]
+> **📖 Start Reading Here**: Read sequentially chapter-by-chapter starting with **[Chapter 01: REST Fundamentals](01-rest-fundamentals.md)**. Every chapter includes **Next Chapter ➡️** buttons at the bottom to continue reading!
+
 ---
 
 ## 📚 Curriculum Roadmap

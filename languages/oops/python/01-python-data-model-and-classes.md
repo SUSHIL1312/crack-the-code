@@ -1,5 +1,10 @@
 # 🐍 Module 01: Python Data Model & Object Creation Internals
 
+<!-- Chapter Navigation Header -->
+| ⬅️ Start of Track | 🏠 [Python OOP Guide](README.md) | [02: Inheritance, MRO & super()](02-inheritance-mro-and-super.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 In Python, classes are not mere syntactic templates: **classes are executable runtime statements, and objects are backed directly by CPython's C structures**.
 
 ---
@@ -99,3 +104,12 @@ w1.tasks = ["Local Task"] # Creates w1.__dict__['tasks']!
 print(w1.tasks) # ['Local Task']
 print(w2.tasks) # ['Deploy v1.0'] (Class variable remains intact for w2)
 ```
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| None (Track Start) | [Python OOP Guide](README.md) | **[02: Inheritance, MRO & super()](02-inheritance-mro-and-super.md)** |
+<!-- /Chapter Navigation Footer -->
+

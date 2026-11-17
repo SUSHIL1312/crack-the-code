@@ -9,6 +9,9 @@ Unlike managed languages (Java, C#, Python) where every object has runtime metad
 - Object destruction is **strictly deterministic**: destructors execute at well-defined points on stack unwind or explicit deletion.
 
 > [!TIP]
+> **📖 Start Reading Here**: Start reading sequentially with **[Chapter 01: The 4 Pillars in Modern C++](01-four-pillars-in-cpp.md)**. Use the **Next Chapter ➡️** buttons at the bottom of each chapter to advance through the guide!
+
+> [!TIP]
 > **Coming from C++14?** Read the **[C++14 to C++20 Migration & Translation Guide](../../modern-cpp/CPP14_TO_CPP20_BRIDGE.md)** for side-by-side code snippets translating C++14 idioms to Modern C++20!
 
 ---

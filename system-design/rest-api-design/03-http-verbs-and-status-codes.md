@@ -1,5 +1,10 @@
 # 03: HTTP Verbs and Status Codes Mastery
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [02: Resource Modeling & URIs](02-resource-modeling-and-uris.md) | 🏠 [REST API Design Hub](README.md) | [04: Production Checklist](04-what-to-take-care-during-design.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. Safety vs Idempotency: The Core Mathematical Principles
 In API design interviews, interviewers frequently probe your understanding of **Safe** and **Idempotent** methods:
 
@@ -104,3 +109,12 @@ A good REST API communicates meaning through HTTP status codes, not by returning
 - **`502 Bad Gateway`**: The reverse proxy/load balancer (Nginx/Envoy) received an invalid response or connection drop from the upstream application server.
 - **`503 Service Unavailable`**: The server is temporarily overloaded or undergoing maintenance.
 - **`504 Gateway Timeout`**: Upstream service (e.g. microservice or database) did not respond in time to the gateway.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [02: Resource Modeling & URIs](02-resource-modeling-and-uris.md) | [REST API Design Hub](README.md) | **[04: Production Checklist](04-what-to-take-care-during-design.md)** |
+<!-- /Chapter Navigation Footer -->
+

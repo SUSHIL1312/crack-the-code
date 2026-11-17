@@ -1,5 +1,10 @@
 # 02: Resource Modeling and URI Design
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [01: REST Fundamentals](01-rest-fundamentals.md) | 🏠 [REST API Design Hub](README.md) | [03: HTTP Verbs & Status Codes](03-http-verbs-and-status-codes.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. The Core Rule: Resources are Nouns, Not Verbs
 The most common mistake junior engineers make in API design is putting actions (verbs) into the URL:
 
@@ -114,3 +119,12 @@ Content-Type: application/json
 }
 ```
 In FAANG interviews, **Pattern A** and **Pattern C** are widely accepted and used by Stripe, GitHub, and Google Cloud APIs.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [01: REST Fundamentals](01-rest-fundamentals.md) | [REST API Design Hub](README.md) | **[03: HTTP Verbs & Status Codes](03-http-verbs-and-status-codes.md)** |
+<!-- /Chapter Navigation Footer -->
+

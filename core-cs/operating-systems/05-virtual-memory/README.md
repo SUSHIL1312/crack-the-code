@@ -1,5 +1,10 @@
 # Module 05: Virtual Memory & Address Translation
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 04: Memory Management](../04-memory-management/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 06: Paging & Segmentation](../06-paging-and-segmentation/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Virtual Memory is one of the greatest abstractions in computer systems. It provides every process with the illusion of an enormous, contiguous, and private address space while transparently mapping, protecting, and sharing physical DRAM underneath.
 
 ---
@@ -43,3 +48,12 @@ Virtual Memory is one of the greatest abstractions in computer systems. It provi
    * Critical FAANG questions: Page fault step-by-step trace, why 64-bit systems need multi-level tables, COW hazards.
 7. [Common Mistakes](common-mistakes.md)
    * Equating Virtual Size (VSZ) with Resident Set Size (RSS), forgetting dirty page flushing.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 04: Memory Management](../04-memory-management/README.md) | [Operating Systems Hub](../README.md) | **[Module 06: Paging & Segmentation](../06-paging-and-segmentation/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

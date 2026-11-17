@@ -1,5 +1,10 @@
 # Module 12: Network Programming, I/O Multiplexing & High-Performance Concurrency
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 11: Network Performance](../11-network-performance/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Networks Capstone Projects](../projects/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Welcome to **Module 12** of the Computer Networks Curriculum. This module demystifies how high-performance internet servers (such as Nginx, Redis, Envoy, Netty, Node.js) scale to hundreds of thousands of concurrent connections using non-blocking I/O and event-driven architectures.
 
 ---
@@ -42,3 +47,12 @@ By the end of this module, you will be able to:
 cd core-cs/computer-networks/12-network-programming/examples
 make run
 ```
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 11: Network Performance](../11-network-performance/README.md) | [Computer Networks Hub](../README.md) | **[Networks Capstone Projects](../projects/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

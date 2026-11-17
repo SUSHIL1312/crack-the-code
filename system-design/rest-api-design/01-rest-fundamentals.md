@@ -1,5 +1,10 @@
 # 01: REST Fundamentals Explained Simply
 
+<!-- Chapter Navigation Header -->
+| ⬅️ Start of Track | 🏠 [REST API Design Hub](README.md) | [02: Resource Modeling & URIs](02-resource-modeling-and-uris.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## What is REST?
 **REST** stands for **Representational State Transfer**. It was introduced in 2000 by Roy Fielding in his doctoral dissertation to describe how the World Wide Web successfully scaled to billions of users and servers.
 
@@ -59,3 +64,12 @@ In FAANG interviews, interviewers evaluate whether you understand **why** REST i
 - **Choose gRPC** for internal low-latency microservice-to-microservice communication (Protobuf binary serialization, HTTP/2 multiplexing).
 - **Choose WebSockets** for bidirectional real-time event streaming (chat apps, stock tickers, gaming).
 - **Choose GraphQL** when clients have complex, deeply nested, dynamically varying data requirements and want to prevent over-fetching.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| None (Track Start) | [REST API Design Hub](README.md) | **[02: Resource Modeling & URIs](02-resource-modeling-and-uris.md)** |
+<!-- /Chapter Navigation Footer -->
+

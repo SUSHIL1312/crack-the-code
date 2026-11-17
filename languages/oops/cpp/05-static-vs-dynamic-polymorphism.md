@@ -1,5 +1,10 @@
 # ⚡ Module 05: Static vs. Dynamic Polymorphism (CRTP & C++20 Concepts)
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [04: Multiple Inheritance & Diamond](04-multiple-inheritance-and-diamond.md) | 🏠 [C++ OOP Guide](README.md) | [06: FAANG Tricky Questions](06-faang-tricky-interview-questions.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 In high-performance C++ systems (high-frequency trading, game engines, network packet parsers), the runtime cost of virtual function indirection (~1-2 ns plus potential cache misses and branch mispredictions) is unacceptable. Modern C++ provides **Static Polymorphism** to achieve zero-overhead polymorphic dispatch.
 
 ---
@@ -132,3 +137,12 @@ int main() {
 | **Plugin Architecture** | ✅ Yes (load `.so` / `.dll` libraries at runtime) | ❌ No (all types must be known at compile time) |
 | **Microsecond / Nanosecond Critical** | ❌ No (virtual call indirection overhead) | ✅ Yes (fully inlined, zero-cost abstraction) |
 | **Binary Size** | ✅ Compact (single copy of compiled code) | ⚠️ Potential code bloat if instantiated for many distinct types |
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [04: Multiple Inheritance & Diamond](04-multiple-inheritance-and-diamond.md) | [C++ OOP Guide](README.md) | **[06: FAANG Tricky Questions](06-faang-tricky-interview-questions.md)** |
+<!-- /Chapter Navigation Footer -->
+

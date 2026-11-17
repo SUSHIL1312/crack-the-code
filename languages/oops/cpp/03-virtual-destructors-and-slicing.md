@@ -1,5 +1,10 @@
 # ⚡ Module 03: Virtual Destructors, Object Slicing, and the Clone Idiom
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [02: Virtual Functions & Vtables](02-virtual-functions-and-vtables.md) | 🏠 [C++ OOP Guide](README.md) | [04: Multiple Inheritance & Diamond](04-multiple-inheritance-and-diamond.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Two of the most common pitfalls tested in FAANG C++ technical interviews are **Virtual Destructor Omissions** (leading to memory leaks and undefined behavior) and **Object Slicing** (stripping polymorphic behavior when passing by value).
 
 ---
@@ -157,3 +162,12 @@ void duplicate_and_speak(const Base& original) {
     copy->speak();
 }
 ```
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [02: Virtual Functions & Vtables](02-virtual-functions-and-vtables.md) | [C++ OOP Guide](README.md) | **[04: Multiple Inheritance & Diamond](04-multiple-inheritance-and-diamond.md)** |
+<!-- /Chapter Navigation Footer -->
+

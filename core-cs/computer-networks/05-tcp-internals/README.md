@@ -1,5 +1,10 @@
 # Module 05: TCP Internals & Congestion Control
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 04: Transport Layer](../04-transport-layer/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 06: UDP & QUIC](../06-udp-and-quic/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 Transmission Control Protocol (TCP, RFC 793) is the reliable backbone of the Internet. Beneath its simple byte-stream abstraction lies one of the most sophisticated distributed state machines ever engineered: sliding window flow control, dynamic RTT estimation, SYN cookie cryptographic defenses, fast retransmission, and state-of-the-art congestion control algorithms (Cubic, Google BBR).
 
@@ -51,3 +56,12 @@ In this module, you will master the deep internal mechanics of TCP state transit
 - `solutions/`: Rigorous step-by-step solutions.
 - `interview-questions.md`: High-frequency FAANG questions (e.g. "Explain TIME_WAIT and why it cannot be set to 0", "Cubic vs BBR", "Why is initial sequence number randomized?").
 - `common-mistakes.md`: Nagle's algorithm + Delayed ACK interaction, bufferbloat in drop-tail queues, conflating flow control with congestion control.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 04: Transport Layer](../04-transport-layer/README.md) | [Computer Networks Hub](../README.md) | **[Module 06: UDP & QUIC](../06-udp-and-quic/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

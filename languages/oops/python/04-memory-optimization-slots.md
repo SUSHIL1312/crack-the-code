@@ -1,5 +1,10 @@
 # 🐍 Module 04: Memory Optimization with `__slots__`
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [03: Polymorphism & Duck Typing](03-polymorphism-and-duck-typing.md) | 🏠 [Python OOP Guide](README.md) | [05: Metaclasses & Class Creation](05-metaclasses-and-class-creation.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 In large-scale data processing, distributed caches, and backend services handling millions of objects, standard Python classes consume massive amounts of RAM due to their dynamic dictionary architecture. **`__slots__`** eliminates this overhead.
 
 ---
@@ -89,3 +94,12 @@ class BaseB: __slots__ = ('b',)
 # TypeError: multiple bases have instance lay-out conflict
 ```
 *Why*: CPython cannot merge two distinct, conflicting C struct memory layouts into a single fixed-offset structure.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [03: Polymorphism & Duck Typing](03-polymorphism-and-duck-typing.md) | [Python OOP Guide](README.md) | **[05: Metaclasses & Class Creation](05-metaclasses-and-class-creation.md)** |
+<!-- /Chapter Navigation Footer -->
+

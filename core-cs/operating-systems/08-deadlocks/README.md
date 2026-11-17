@@ -1,5 +1,10 @@
 # Module 08: Deadlocks & Resource Allocation
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 07: Synchronization Primitives](../07-synchronization-primitives/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 09: Concurrency & Parallelism](../09-concurrency-and-parallelism/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Deadlocks occur when a set of concurrent processes are permanently blocked because each process holds a resource and waits for another resource held by someone else in the set. Understanding the four Coffman conditions, prevention strategies, and avoidance algorithms is a core requirement for systems reliability.
 
 ---
@@ -27,3 +32,12 @@ Deadlocks occur when a set of concurrent processes are permanently blocked becau
    * Essential FAANG questions: Coffman conditions, Deadlock vs Livelock, Real-world prevention in large scale distributed systems.
 7. [Common Mistakes](common-mistakes.md)
    * Conflating Unsafe State with Deadlocked State, circular lock dependencies across microservices.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 07: Synchronization Primitives](../07-synchronization-primitives/README.md) | [Operating Systems Hub](../README.md) | **[Module 09: Concurrency & Parallelism](../09-concurrency-and-parallelism/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Module 00: Computer Fundamentals & Program Execution
 
+<!-- Chapter Navigation Header -->
+| ⬅️ Start of Track | 🏠 [Operating Systems Hub](../README.md) | [Module 01: Processes & Threads](../01-processes-and-threads/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Understanding how hardware, the operating system kernel, and user applications interact is the foundation of systems programming and high-performance engineering.
 
 ---
@@ -32,3 +37,12 @@ Understanding how hardware, the operating system kernel, and user applications i
    * Categorized FAANG questions covering process launch, memory faults, and privilege boundaries.
 8. [Common Mistakes](common-mistakes.md)
    * Traps regarding undefined behavior, stack overflow vs heap exhaustion, and syscall overhead.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| None (Track Start) | [Operating Systems Hub](../README.md) | **[Module 01: Processes & Threads](../01-processes-and-threads/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

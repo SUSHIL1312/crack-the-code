@@ -104,6 +104,22 @@ make help
 
 ---
 
+## 📖 Interactive Book Mode (Where to Start & Sequential Reading Guide)
+
+Prefer reading this repository sequentially like a textbook? Every chapter has **⬅️ Previous Chapter** and **Next Chapter ➡️** navigation bars at both the top and bottom. Choose your subject to start reading from Chapter 1:
+
+| Subject Track | Total Chapters | Starting Point (Chapter 1) | Core Topics Covered |
+|---|:---:|---|---|
+| **Operating Systems** | 14 Modules | **[Module 00: Computer Fundamentals](core-cs/operating-systems/00-computer-fundamentals/README.md)** | CPU rings, ELF binaries, processes, paging, futex, syscalls, filesystems. |
+| **Computer Networks** | 13 Modules | **[Module 00: Networking Fundamentals](core-cs/computer-networks/00-networking-fundamentals/README.md)** | Delay formulas, OSI/TCP layers, TCP sequence math, socket programming, HTTP/3, TLS 1.3. |
+| **C++ Object-Oriented Programming** | 6 Chapters | **[Chapter 01: Four Pillars in Modern C++](languages/oops/cpp/01-four-pillars-in-cpp.md)** | Struct vs class ABI, vtable assembly, virtual destructors, diamond inheritance, CRTP. |
+| **Python Object-Oriented Programming**| 6 Chapters | **[Chapter 01: Python Data Model & Classes](languages/oops/python/01-python-data-model-and-classes.md)**| PyObject, `__new__` vs `__init__`, C3 MRO, `super()`, `__slots__` 70% memory reduction. |
+| **REST API Design** | 6 Chapters | **[Chapter 01: REST Fundamentals](system-design/rest-api-design/01-rest-fundamentals.md)** | Roy Fielding constraints, resource modeling, Idempotency keys, Cursor pagination, ETags. |
+| **Modern C++ Internals** | 9 Modules | **[Module 01: Memory Layout & Pointers](languages/modern-cpp/01-memory-layout-and-pointers/README.md)** | Struct padding, Rule of 5, move semantics, smart pointer control blocks, atomics. |
+| **Python CPython & Concurrency** | 6 Modules | **[Module 01: Data Model & Dunder Methods](languages/python/01-data-model-and-dunder-methods/README.md)**| Dunder protocol, generational cyclic GC, GIL release points, asyncio event loop. |
+
+---
+
 ## 📚 Curriculum Highlights
 
 ### 1. [Core CS: Operating Systems](core-cs/operating-systems/)

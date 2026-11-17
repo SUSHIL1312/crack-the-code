@@ -1,5 +1,10 @@
 # 04: What to Take Care of During API Design (Production Checklist)
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [03: HTTP Verbs & Status Codes](03-http-verbs-and-status-codes.md) | 🏠 [REST API Design Hub](README.md) | [05: End-to-End Case Study](05-end-to-end-design-case-study.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Designing a REST API for a hobby project is easy. Designing a REST API that runs at **Google, Stripe, Uber, or Netflix** scale requires handling edge cases: network timeouts, concurrent edits, double payments, database scale bottlenecks, and security.
 
 Here is the **exhaustive production checklist** tested in FAANG interviews.
@@ -218,3 +223,12 @@ Content-Type: application/problem+json
 - [ ] **Use Type-Prefixed IDs**: Instead of integer auto-increment IDs (`42`), use Stripe-style type-prefixed IDs (`usr_9a8f2`, `ord_7712a`) or UUIDv7. Prevents attackers from scraping all data by enumerating `id=1,2,3...`!
 - [ ] **CORS (Cross-Origin Resource Sharing)**: Properly configure `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and handle `OPTIONS` preflight requests.
 - [ ] **Input Validation & Sanitization**: Reject any unexpected fields (prevent Mass Assignment vulnerabilities) and sanitize input against injection.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [03: HTTP Verbs & Status Codes](03-http-verbs-and-status-codes.md) | [REST API Design Hub](README.md) | **[05: End-to-End Case Study](05-end-to-end-design-case-study.md)** |
+<!-- /Chapter Navigation Footer -->
+

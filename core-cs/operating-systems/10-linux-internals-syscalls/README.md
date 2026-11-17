@@ -1,5 +1,10 @@
 # Module 10: Linux Internals & System Calls
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 09: Concurrency & Parallelism](../09-concurrency-and-parallelism/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 11: File Systems & I/O](../11-file-systems-and-io/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 The Linux kernel manages processes, hardware devices, storage, and networking through a unified system call interface and the Virtual Filesystem (VFS). This module explores low-level syscall mechanics, file descriptor tables, signal handling safety, `/proc` inspection, and non-blocking I/O multiplexing.
 
 ---
@@ -30,3 +35,12 @@ The Linux kernel manages processes, hardware devices, storage, and networking th
    * Critical FAANG questions: `select` vs `epoll`, Level vs Edge triggered, why `printf` in signal handlers causes deadlocks.
 7. [Common Mistakes](common-mistakes.md)
    * Calling non-reentrant functions in signal handlers, file descriptor leaks, ignoring partial writes.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 09: Concurrency & Parallelism](../09-concurrency-and-parallelism/README.md) | [Operating Systems Hub](../README.md) | **[Module 11: File Systems & I/O](../11-file-systems-and-io/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

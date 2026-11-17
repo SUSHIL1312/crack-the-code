@@ -1,5 +1,10 @@
 # Module 00: Networking Fundamentals
 
+<!-- Chapter Navigation Header -->
+| ⬅️ Start of Track | 🏠 [Computer Networks Hub](../README.md) | [Module 01: OSI & TCP/IP Model](../01-osi-and-tcp-ip-model/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 Computer networking is the foundation of distributed computing, modern cloud services, and global web infrastructure. Before diving into protocols like TCP, IP, or HTTP, engineers must understand the physical and mathematical realities governing how data travels across wires, fiber-optic cables, and wireless spectrums.
 
@@ -30,3 +35,12 @@ In this module, you will master the physics and mathematics of network latency, 
 - `solutions/`: Step-by-step mathematical solutions.
 - `interview-questions.md`: FAANG interview questions (e.g. "Why is US-to-India ping minimum ~150ms?", "Bandwidth vs throughput").
 - `common-mistakes.md`: Confusing transmission delay with propagation delay, ignoring queuing delay under load.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| None (Track Start) | [Computer Networks Hub](../README.md) | **[Module 01: OSI & TCP/IP Model](../01-osi-and-tcp-ip-model/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

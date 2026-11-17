@@ -1,5 +1,10 @@
 # Python Capstone Projects
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [06: Python FAANG Interview Bank](../06-high-frequency-interview-bank/README.md) | 🏠 [Python Hub](../README.md) | End of Track 🏁 |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 This directory contains the 4 most frequent hands-on Python coding challenges asked in technical interviews at **Meta, Google, Stripe, and Netflix**.
 
 ---
@@ -12,3 +17,12 @@ This directory contains the 4 most frequent hands-on Python coding challenges as
 | **[02-lru-cache-decorator](02-lru-cache-decorator/)** | Data Structures & Decorators | Building `@lru_cache` from scratch without standard library, $O(1)$ Doubly Linked List + Dict. |
 | **[03-thread-safe-connection-pool](03-thread-safe-connection-pool/)** | Concurrency & Resource Pooling | Bounded queue, mutex locking, connection recycling, timeouts. |
 | **[04-custom-context-manager-and-profiler](04-custom-context-manager-and-profiler/)** | Metaprogramming & Profiling | `__enter__` and `__exit__`, exception swallowing semantics, CPU execution timing. |
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [06: Python FAANG Interview Bank](../06-high-frequency-interview-bank/README.md) | [Python Hub](../README.md) | Track Completed 🏁 |
+<!-- /Chapter Navigation Footer -->
+

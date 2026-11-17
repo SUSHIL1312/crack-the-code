@@ -1,5 +1,10 @@
 # 🐍 Module 02: Inheritance, MRO & Cooperative `super()`
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [01: Data Model & Classes](01-python-data-model-and-classes.md) | 🏠 [Python OOP Guide](README.md) | [03: Polymorphism & Duck Typing](03-polymorphism-and-duck-typing.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Python supports multiple inheritance natively. To prevent the ambiguities and state duplications of the **Diamond Problem**, Python uses the mathematically rigorous **C3 Linearization Algorithm** to construct a deterministic **Method Resolution Order (MRO)**.
 
 ---
@@ -108,3 +113,12 @@ If `BranchB` or `BranchC` explicitly calls `Root.process(self)` instead of `supe
 
 ### The Cooperative Multiple Inheritance Rule:
 Always accept `*args` and `**kwargs` and pass them up with `super().__init__(*args, **kwargs)` to ensure parameters flow cleanly through unknown sibling classes along the MRO.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [01: Data Model & Classes](01-python-data-model-and-classes.md) | [Python OOP Guide](README.md) | **[03: Polymorphism & Duck Typing](03-polymorphism-and-duck-typing.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Module 09: Modern C++ FAANG Technical Interview Question Bank
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [08: Modern C++ Vocabulary Types](../08-modern-cpp-vocabulary-types/README.md) | 🏠 [Modern C++ Hub](../README.md) | [Modern C++ Capstones](../projects/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ### Q1: What happens if an exception escapes from a destructor during stack unwinding?
 **Answer**:
 - If a destructor throws an exception while stack unwinding is already occurring for an earlier exception, the C++ runtime immediately invokes `std::terminate()`, which aborts the entire process without cleanup.
@@ -75,3 +80,12 @@
 - Allocating small objects on the heap is slow ($O(\text{malloc})$ overhead, memory fragmentation, cache misses).
 - SBO embeds a small inline byte array (typically 15-22 bytes for `std::string`, 16-32 bytes for `std::function`) inside the object itself.
 - If the data or closure fits within the internal buffer, zero heap allocations occur. Only when data exceeds the capacity does it allocate from the free store (heap).
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [08: Modern C++ Vocabulary Types](../08-modern-cpp-vocabulary-types/README.md) | [Modern C++ Hub](../README.md) | **[Modern C++ Capstones](../projects/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -9,6 +9,9 @@ In Python, **everything is an object**, including functions, modules, and classe
 
 Understanding these internals is essential for passing senior and staff engineering interviews at top tech companies.
 
+> [!TIP]
+> **📖 Start Reading Here**: Start reading sequentially with **[Chapter 01: Python Data Model & Object Creation](01-python-data-model-and-classes.md)**. Use the **Next Chapter ➡️** buttons at the bottom of each chapter to advance through the guide!
+
 ---
 
 ## 📂 Curriculum Index

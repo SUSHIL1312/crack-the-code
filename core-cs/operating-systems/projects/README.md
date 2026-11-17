@@ -1,5 +1,10 @@
 # Operating Systems: Capstone Projects
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 13: Advanced OS Concepts](../13-advanced-os-concepts/README.md) | 🏠 [Operating Systems Hub](../README.md) | End of Track 🏁 |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Hands-on, production-grade systems software projects designed to demonstrate mastery of OS concepts in engineering interviews at Google, Meta, Apple, Netflix, Uber, and systems infrastructure teams.
 
 ---
@@ -27,3 +32,12 @@ Every project includes a dedicated `Makefile` and can also be built using the to
 cd 01-mini-shell && make && ./mini_shell
 cd ../02-thread-pool && make && ./thread_pool_test
 ```
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 13: Advanced OS Concepts](../13-advanced-os-concepts/README.md) | [Operating Systems Hub](../README.md) | Track Completed 🏁 |
+<!-- /Chapter Navigation Footer -->
+

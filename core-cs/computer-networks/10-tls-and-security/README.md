@@ -1,5 +1,10 @@
 # Module 10: Transport Layer Security (TLS 1.2 / 1.3) & Cryptography
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 09: HTTP & HTTPS](../09-http-and-https/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 11: Network Performance](../11-network-performance/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 Transport Layer Security (TLS, RFC 8446) is the cryptographic protocol that turns insecure plaintext internet channels into confidential, tamper-proof, and authenticated connections (HTTPS). Every secure web visit, mobile API call, database connection, and encrypted microservice RPC relies on TLS to defend against eavesdropping, data alteration, and impersonation.
 
@@ -30,3 +35,12 @@ In this module, you will master symmetric vs asymmetric cryptography, Elliptic-C
 - `solutions/`: Reference solutions.
 - `interview-questions.md`: FAANG interview questions (e.g. "What is Perfect Forward Secrecy?", "How does SNI enable multiple SSL sites on one IP?").
 - `common-mistakes.md`: Expired certificate outages, missing intermediate certificates, disabling certificate validation in code (`CURLOPT_SSL_VERIFYPEER = 0`).
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 09: HTTP & HTTPS](../09-http-and-https/README.md) | [Computer Networks Hub](../README.md) | **[Module 11: Network Performance](../11-network-performance/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

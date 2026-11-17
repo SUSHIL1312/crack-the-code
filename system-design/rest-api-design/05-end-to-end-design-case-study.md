@@ -1,5 +1,10 @@
 # 05: End-to-End Design Case Study: Enterprise E-Commerce API
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [04: Production Checklist](04-what-to-take-care-during-design.md) | 🏠 [REST API Design Hub](README.md) | [06: FAANG Interview Questions](interview-questions.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 In this case study, we will design the complete REST API for an enterprise E-Commerce platform (like Amazon or Shopify). We will apply all the architectural rules, status codes, idempotency keys, and error handling discussed in previous chapters.
 
 ---
@@ -195,3 +200,12 @@ Content-Type: application/problem+json
 2. **Represent amounts in the smallest currency unit** (`price_cents: 29900` instead of `299.00`) to completely eliminate floating-point rounding errors.
 3. **Embed hypermedia links (`_links`)** for intuitive state transitions (`cancel`, `payment`).
 4. **Mandate `Idempotency-Key` on payment/order POST requests** to make distributed systems fault-tolerant against network disconnects.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [04: Production Checklist](04-what-to-take-care-during-design.md) | [REST API Design Hub](README.md) | **[06: FAANG Interview Questions](interview-questions.md)** |
+<!-- /Chapter Navigation Footer -->
+

@@ -1,5 +1,10 @@
 # Module 07: Sockets Programming & Berkeley API
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 06: UDP & QUIC](../06-udp-and-quic/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 08: DNS](../08-dns/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 The Berkeley Sockets API (POSIX socket standard) is the universal application programming interface connecting user-space software to the kernel's network protocol stack. Whether writing high-performance web servers in C++, networking libraries in Rust, or database drivers in Python, every networked process ultimately interfaces with the operating system through socket descriptors.
 
@@ -31,3 +36,12 @@ In this module, you will master the socket lifecycle, address resolution with `g
 - `solutions/`: Reference production solutions.
 - `interview-questions.md`: FAANG interview questions (e.g. `SO_REUSEPORT` kernel load balancing, `shutdown()` vs `close()`, handling `EINTR`).
 - `common-mistakes.md`: Ignoring partial `send()`/`recv()`, forgetting `htons()`, leaking socket descriptors.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 06: UDP & QUIC](../06-udp-and-quic/README.md) | [Computer Networks Hub](../README.md) | **[Module 08: DNS](../08-dns/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

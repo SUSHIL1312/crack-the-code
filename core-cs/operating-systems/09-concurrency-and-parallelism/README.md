@@ -1,5 +1,10 @@
 # Module 09: Concurrency, Parallelism & Multicore Systems
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 08: Deadlocks](../08-deadlocks/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 10: Linux Syscalls](../10-linux-internals-syscalls/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Writing software that scales across dozens of CPU cores requires moving past high-level thread abstractions to understand hardware cache coherence protocols, memory bus contention, false sharing, and lock-free atomic primitives.
 
 ---
@@ -31,3 +36,12 @@ Writing software that scales across dozens of CPU cores requires moving past hig
    * Essential FAANG questions: What is false sharing? Concurrency vs Parallelism, ABA problem, MESI protocol.
 7. [Common Mistakes](common-mistakes.md)
    * Assuming atomic operations are free, ignoring memory bus saturation under high core counts.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 08: Deadlocks](../08-deadlocks/README.md) | [Operating Systems Hub](../README.md) | **[Module 10: Linux Syscalls](../10-linux-internals-syscalls/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

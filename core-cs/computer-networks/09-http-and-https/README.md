@@ -1,5 +1,10 @@
 # Module 09: HTTP, HTTPS, and Web Protocols
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 08: DNS](../08-dns/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 10: TLS & Security](../10-tls-and-security/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 Hypertext Transfer Protocol (HTTP) is the foundational application layer protocol of the World Wide Web and the universal communication medium for RESTful APIs, microservices, and mobile applications. Understanding its architectural evolution from simple ASCII text (HTTP/1.1) to binary multiplexed streams (HTTP/2) and UDP-based QUIC framing (HTTP/3) is vital for high-scale backend engineering and FAANG architecture interviews.
 
@@ -31,3 +36,12 @@ In this module, you will master the HTTP request/response model, caching semanti
 - `solutions/`: Reference solutions.
 - `interview-questions.md`: FAANG interview questions (e.g. `PUT` vs `PATCH`, 502 Bad Gateway vs 504 Gateway Timeout, ETag validation).
 - `common-mistakes.md`: Breaking idempotency in `GET` requests, missing `Connection: keep-alive` in client pools, parsing HTTP with brittle regexes.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 08: DNS](../08-dns/README.md) | [Computer Networks Hub](../README.md) | **[Module 10: TLS & Security](../10-tls-and-security/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

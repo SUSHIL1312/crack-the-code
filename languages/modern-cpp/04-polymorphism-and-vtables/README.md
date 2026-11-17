@@ -1,5 +1,10 @@
 # Module 04: Polymorphism and Vtables Under the Hood
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [03: Smart Pointers Internals](../03-smart-pointers-internals/README.md) | 🏠 [Modern C++ Hub](../README.md) | [05: Templates, SFINAE & Concepts](../05-templates-sfinae-and-concepts/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. Dynamic Dispatch Mechanics
 When a class contains at least one `virtual` function:
 1. The compiler inserts an implicit hidden pointer (`__vptr`) as the first member of the object (`offset 0`).
@@ -38,3 +43,12 @@ In multiple inheritance (`class Derived : public BaseA, public BaseB`):
   BaseB* b = d; // Adds +sizeof(BaseA) bytes to pointer address!
   ```
 - This `this-pointer adjustment` is a classic FAANG interview question.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [03: Smart Pointers Internals](../03-smart-pointers-internals/README.md) | [Modern C++ Hub](../README.md) | **[05: Templates, SFINAE & Concepts](../05-templates-sfinae-and-concepts/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

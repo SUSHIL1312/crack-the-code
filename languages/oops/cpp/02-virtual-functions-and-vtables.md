@@ -1,5 +1,10 @@
 # ⚡ Module 02: Virtual Functions, Vtables, and Dynamic Dispatch
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [01: Four Pillars in Modern C++](01-four-pillars-in-cpp.md) | 🏠 [C++ OOP Guide](README.md) | [03: Virtual Destructors & Slicing](03-virtual-destructors-and-slicing.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Dynamic polymorphism in C++ is implemented using **Virtual Method Tables (`vtable`)** and **Virtual Pointers (`vptr`)**. This module breaks down the exact memory layout, assembly instructions, performance tradeoffs, and critical interview traps.
 
 ---
@@ -136,3 +141,12 @@ public:
 - `final` on a class prevents further inheritance: `class FinalClass final : public Base {};`
 - `final` on a method prevents further overriding: `void foo() override final;`
 - **Compiler Optimization (Devirtualization)**: When the compiler sees `final`, it knows no further subclasses can override the method. It converts the indirect virtual call into a **direct, statically dispatched call** and can inline it!
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [01: Four Pillars in Modern C++](01-four-pillars-in-cpp.md) | [C++ OOP Guide](README.md) | **[03: Virtual Destructors & Slicing](03-virtual-destructors-and-slicing.md)** |
+<!-- /Chapter Navigation Footer -->
+

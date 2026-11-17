@@ -1,5 +1,10 @@
 # Module 02: CPU Scheduling
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 01: Processes & Threads](../01-processes-and-threads/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 03: Context Switching](../03-context-switching/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 CPU scheduling is the heart of multi-programmed operating systems. The scheduler decides which thread or process gets to execute on an available CPU core and for how long, optimizing for latency, throughput, responsiveness, and fairness.
 
 ---
@@ -27,3 +32,12 @@ CPU scheduling is the heart of multi-programmed operating systems. The scheduler
    * Key FAANG interview questions: CFS `vruntime`, Convoy effect, real-time priorities vs fairness.
 7. [Common Mistakes](common-mistakes.md)
    * Selecting infinitesimal time quantums, ignoring I/O bursts, and confusing response time with waiting time.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 01: Processes & Threads](../01-processes-and-threads/README.md) | [Operating Systems Hub](../README.md) | **[Module 03: Context Switching](../03-context-switching/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

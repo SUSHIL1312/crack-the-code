@@ -1,5 +1,10 @@
 # Module 01: Processes & Threads
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 00: Computer Fundamentals](../00-computer-fundamentals/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 02: CPU Scheduling](../02-cpu-scheduling/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Processes and threads are the core abstractions by which an Operating System executes concurrent programs. Understanding their isolation boundaries, kernel representations, and performance costs is critical for systems programming and backend concurrency.
 
 ---
@@ -50,3 +55,12 @@ Every Linux process runs inside a canonical 64-bit virtual address space, strict
    * Critical FAANG questions: Thread stacks, resource sharing, `fork()` safety in multithreaded code.
 8. [Common Mistakes](common-mistakes.md)
    * Fork bombs, failure to reap zombies, and accessing destroyed thread-local variables.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 00: Computer Fundamentals](../00-computer-fundamentals/README.md) | [Operating Systems Hub](../README.md) | **[Module 02: CPU Scheduling](../02-cpu-scheduling/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

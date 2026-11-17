@@ -1,5 +1,10 @@
 # ⚡ Module 06: Top 10 FAANG Tricky C++ OOP Interview Questions
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [05: Static vs Dynamic Polymorphism](05-static-vs-dynamic-polymorphism.md) | 🏠 [C++ OOP Guide](README.md) | End of Track 🏁 |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 These 10 questions represent the most frequently asked, high-yield tricky C++ OOP interview questions at Google, Meta, Apple, Amazon, and Microsoft.
 
 ---
@@ -231,3 +236,12 @@ Prefer composition 95% of the time. Use `private` inheritance only when:
   If the dynamic cast fails, it returns `nullptr`. The caller can safely check `if (ptr != nullptr)`.
 * On a **reference** (`dynamic_cast<Derived&>(base_ref)`):
   Since references cannot be null in C++, failure cannot return `nullptr`. Instead, it throws **`std::bad_cast`**. If unhandled, this terminates the application.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [05: Static vs Dynamic Polymorphism](05-static-vs-dynamic-polymorphism.md) | [C++ OOP Guide](README.md) | Track Completed 🏁 |
+<!-- /Chapter Navigation Footer -->
+

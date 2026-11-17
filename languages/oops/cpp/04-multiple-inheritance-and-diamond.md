@@ -1,5 +1,10 @@
 # ⚡ Module 04: Multiple Inheritance, Pointer Adjustments, and the Diamond Problem
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [03: Virtual Destructors & Slicing](03-virtual-destructors-and-slicing.md) | 🏠 [C++ OOP Guide](README.md) | [05: Static vs Dynamic Polymorphism](05-static-vs-dynamic-polymorphism.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Multiple inheritance introduces subtle low-level complexities: **multiple virtual pointers (`vptr`), non-zero `this` pointer adjustments, and state duplication in the Diamond Problem**.
 
 ---
@@ -130,3 +135,12 @@ public:
 
 ### Constructor Execution Order:
 In virtual inheritance, the initialization calls to `Device` inside `Printer()` and `Scanner()` are **ignored**. The most derived class (`Copier`) is directly responsible for constructing the shared virtual base `Device`.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [03: Virtual Destructors & Slicing](03-virtual-destructors-and-slicing.md) | [C++ OOP Guide](README.md) | **[05: Static vs Dynamic Polymorphism](05-static-vs-dynamic-polymorphism.md)** |
+<!-- /Chapter Navigation Footer -->
+

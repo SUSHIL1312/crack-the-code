@@ -1,5 +1,10 @@
 # Module 07: Concurrency, Multithreading & Atomics
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [06: Lambdas & Functional Programming](../06-lambdas-and-functional-programming/README.md) | 🏠 [Modern C++ Hub](../README.md) | [08: Modern C++ Vocabulary Types](../08-modern-cpp-vocabulary-types/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## 1. `std::jthread` (C++20) vs `std::thread` (C++14)
 
 ### 🔴 The C++14 Way (`std::thread` Pitfall):
@@ -54,3 +59,12 @@ A **Data Race** occurs when two threads access the same memory location concurre
 2. `std::memory_order_acquire`: Load operation. Ensures no subsequent memory reads/writes can be reordered before this load.
 3. `std::memory_order_release`: Store operation. Ensures all previous memory reads/writes are committed and visible before this store.
 4. `std::memory_order_seq_cst`: Sequential consistency (default). Globally agreed-upon total order across all threads.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [06: Lambdas & Functional Programming](../06-lambdas-and-functional-programming/README.md) | [Modern C++ Hub](../README.md) | **[08: Modern C++ Vocabulary Types](../08-modern-cpp-vocabulary-types/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

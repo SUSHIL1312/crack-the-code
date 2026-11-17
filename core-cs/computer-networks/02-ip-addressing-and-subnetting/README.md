@@ -1,5 +1,10 @@
 # Module 02: IP Addressing and Subnetting
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 01: OSI & TCP/IP Model](../01-osi-and-tcp-ip-model/README.md) | 🏠 [Computer Networks Hub](../README.md) | [Module 03: Ethernet, ARP & Switching](../03-ethernet-arp-and-switching/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 The Internet Protocol (IP) provides logical addressing and routing across heterogeneous physical networks. Understanding IPv4 subnetting, bitwise address calculations, Classless Inter-Domain Routing (CIDR), RFC 1918 private address ranges, and the transition to IPv6 (128-bit addresses) is an essential prerequisite for cloud systems architecture, VPC configuration (AWS/GCP/Azure), and networking interviews.
 
@@ -30,3 +35,12 @@ In this module, you will master the mathematical algorithms behind CIDR masks, s
 - `solutions/`: Complete step-by-step mathematical subnetting solutions.
 - `interview-questions.md`: FAANG interview questions (e.g., VPC design, Longest Prefix Match, RFC 1918 NAT exhaustion).
 - `common-mistakes.md`: Off-by-one errors in `/31` and `/32`, endianness bugs in bitwise IP manipulation, subnet overlap collisions.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 01: OSI & TCP/IP Model](../01-osi-and-tcp-ip-model/README.md) | [Computer Networks Hub](../README.md) | **[Module 03: Ethernet, ARP & Switching](../03-ethernet-arp-and-switching/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

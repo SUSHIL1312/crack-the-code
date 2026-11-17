@@ -1,5 +1,10 @@
 # Module 07: Synchronization Primitives & Thread Safety
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 06: Paging & Segmentation](../06-paging-and-segmentation/README.md) | 🏠 [Operating Systems Hub](../README.md) | [Module 08: Deadlocks](../08-deadlocks/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 Concurrency without synchronization causes race conditions, corrupted memory, and non-deterministic crashes. This module is one of the highest-priority interview subjects across FAANG engineering loops.
 
 > [!TIP]
@@ -39,3 +44,12 @@ Concurrency without synchronization causes race conditions, corrupted memory, an
    * Crucial FAANG questions: Mutex vs Semaphore, Futex mechanics, Spurious wakeups, Lock-free vs Locking.
 7. [Common Mistakes](common-mistakes.md)
    * Using `if` instead of `while` with condition variables, holding locks during I/O, deadlocks from inverted lock hierarchy.
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 06: Paging & Segmentation](../06-paging-and-segmentation/README.md) | [Operating Systems Hub](../README.md) | **[Module 08: Deadlocks](../08-deadlocks/README.md)** |
+<!-- /Chapter Navigation Footer -->
+

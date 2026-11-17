@@ -1,5 +1,10 @@
 # Module 13: Advanced OS Concepts & Modern Linux Internals
 
+<!-- Chapter Navigation Header -->
+| ⬅️ [Module 12: IPC & Shared Memory](../12-ipc-and-shared-memory/README.md) | 🏠 [Operating Systems Hub](../README.md) | [OS Capstone Projects](../projects/README.md) ➡️ |
+|:---|:---:|---:|
+<!-- /Chapter Navigation Header -->
+
 ## Overview
 Modern cloud infrastructure, high-frequency trading platforms, and large-scale distributed systems rely on advanced operating system primitives. Container runtimes (Docker, containerd, Kubernetes), high-performance databases, and ultra-low-latency engines operate at the intersection of Linux namespaces, cgroups, NUMA hardware topologies, CPU cache hierarchies, and zero-syscall asynchronous I/O (`io_uring`).
 
@@ -28,3 +33,12 @@ In this module, you will master the internals of containerization, memory hierar
 - `solutions/`: Production solutions.
 - `interview-questions.md`: FAANG interview questions (Docker internals, OOM handling in Kubernetes, NUMA tuning for database engines).
 - `common-mistakes.md`: Frequent production pitfalls (cgroup v1 vs v2 differences, NUMA false sharing, memory limit thrashing).
+
+---
+
+<!-- Chapter Navigation Footer -->
+| ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
+|:---|:---:|---:|
+| [Module 12: IPC & Shared Memory](../12-ipc-and-shared-memory/README.md) | [Operating Systems Hub](../README.md) | **[OS Capstone Projects](../projects/README.md)** |
+<!-- /Chapter Navigation Footer -->
+
