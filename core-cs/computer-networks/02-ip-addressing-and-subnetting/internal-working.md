@@ -15,7 +15,8 @@ For example, with $P = 26$:
 - Shift `0xFFFFFFFF` left by 6: `11111111.11111111.11111111.11000000` $\implies$ `255.255.255.192` (`0xFFFFFFC0`).
 
 ### 2. Computing the Network Address:
-$$\text{Network} = \text{IP} \ \& \ \text{Mask}$$
+$$\text{Network} = \text{IP} \land \text{Mask}$$
+*(Bitwise logic: `Network = IP & Mask`)*
 All host bits are masked to zero. This identifies the wire subnet and cannot be assigned to an individual host interface.
 
 ### 3. Computing the Broadcast Address:
@@ -30,7 +31,7 @@ All host bits are set to one. Packets sent to this address are received by every
 
 ### 5. Checking Subnet Membership:
 A target IP $T$ belongs to subnet $(S, \text{Mask})$ if and only if:
-$$(T \ \& \ \text{Mask}) == (S \ \& \ \text{Mask})$$
+$$(T \land \text{Mask}) == (S \land \text{Mask})$$
 
 ---
 

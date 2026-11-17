@@ -17,7 +17,7 @@ A comprehensive, production-quality, code-first engineering platform designed to
 
 This repository rejects shallow theory notes and passive reading. Every concept is taught through an uncompromising 7-stage engineering pipeline:
 
-$$\text{Concept} \longrightarrow \text{Internal Mechanics} \longrightarrow \text{Visualization} \longrightarrow \text{Implementation} \longrightarrow \text{Experiment \& Break} \longrightarrow \text{Interview Traps} \longrightarrow \text{Advanced Challenge}$$
+$$\text{Concept} \longrightarrow \text{Internal Mechanics} \longrightarrow \text{Visualization} \longrightarrow \text{Implementation} \longrightarrow \text{Experiment and Break} \longrightarrow \text{Interview Traps} \longrightarrow \text{Advanced Challenge}$$
 
 1. **Why It Exists**: Real-world analogy and engineering motivation.
 2. **Under the Hood**: How the OS kernel, hardware memory hierarchy, or language runtime handles it.

@@ -10,7 +10,7 @@ In this module, you will master the mathematical algorithms behind CIDR masks, s
 ## Learning Objectives
 1. **IPv4 Binary Structure**: Master the 32-bit integer representation of IPv4 addresses and dotted-decimal formatting.
 2. **Subnet Math & Bitwise Logic**:
-   - Network Address: $\text{IP} \ \& \ \text{Mask}$
+   - Network Address: $\text{IP} \land \text{Mask}$ (`IP & Mask`)
    - Broadcast Address: $\text{IP} \mid (\sim \text{Mask})$
    - Total Addresses: $2^{32 - \text{prefix}}$
    - Usable Host Capacity: $2^{32 - \text{prefix}} - 2$
