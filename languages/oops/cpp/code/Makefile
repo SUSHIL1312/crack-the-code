@@ -1,7 +1,7 @@
 CXX = clang++
 CXXFLAGS = -std=c++20 -Wall -Wextra -pedantic -O2
 
-BINS = vtable_inspection virtual_dtor_leak object_slicing_demo diamond_virtual_inheritance
+BINS = vtable_inspection virtual_dtor_leak object_slicing_demo diamond_virtual_inheritance deep_vs_shallow_copy
 
 .PHONY: all clean test
 
@@ -19,6 +19,9 @@ object_slicing_demo: object_slicing_demo.cpp
 diamond_virtual_inheritance: diamond_virtual_inheritance.cpp
 	$(CXX) $(CXXFLAGS) $< -o $@
 
+deep_vs_shallow_copy: deep_vs_shallow_copy.cpp
+	$(CXX) $(CXXFLAGS) $< -o $@
+
 test: all
 	@echo "=========================================="
 	@echo " Running C++ OOP Verification Test Suite  "
@@ -27,6 +30,7 @@ test: all
 	./virtual_dtor_leak
 	./object_slicing_demo
 	./diamond_virtual_inheritance
+	./deep_vs_shallow_copy
 	@echo "=========================================="
 	@echo "   ALL C++ OOP LAB TESTS PASSED (100%)    "
 	@echo "=========================================="

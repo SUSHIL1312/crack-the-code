@@ -50,6 +50,60 @@ class OptimizedLayout {
 > [!TIP]
 > **FAANG Interview Tip**: Order class member variables from largest alignment requirement to smallest to eliminate unnecessary internal padding and maximize CPU cache line efficiency.
 
+### Object Lifecycle: Copy Constructor, Shallow Copy vs. Deep Copy
+
+In C++, creating an object from another object triggers the **Copy Constructor**:
+```cpp
+ClassName(const ClassName& other);
+```
+
+#### 1. Why `const ClassName&` (Why pass by reference)?
+- If passed by value (`ClassName(ClassName other)`), creating the function parameter `other` requires calling the copy constructor, which passes by value, which calls the copy constructor... $\to$ **Infinite compile-time recursion!** The C++ compiler raises a mandatory compiler error.
+- Passing `const ClassName&` avoids any copying and allows binding to temporary rvalues.
+
+#### 2. Shallow Copy vs. Deep Copy:
+- **Shallow Copy (Compiler Default)**:
+  Copies raw bitwise member values. If a class contains a heap pointer `int* data_`, the copied object receives the *exact same address*.
+  - **Catastrophic Double-Free Trap**: When both objects destruct, `delete[] data_` is called twice on the same pointer $\to$ `SIGABRT` crash (`free(): double free detected`)!
+- **Deep Copy (Explicit Implementation)**:
+  Allocates a brand new heap block and copies the contents. Both objects manage their own independent memory buffers.
+
+#### 3. C++14 Deep Copy Constructor & Copy Assignment Example:
+```cpp
+class VectorBuffer {
+    int* buffer_;
+    size_t size_;
+public:
+    explicit VectorBuffer(size_t size) 
+        : buffer_(size ? new int[size]() : nullptr), size_(size) {}
+
+    ~VectorBuffer() { delete[] buffer_; }
+
+    // Deep Copy Constructor (C++14)
+    VectorBuffer(const VectorBuffer& other)
+        : buffer_(other.size_ ? new int[other.size_] : nullptr), size_(other.size_) {
+        if (buffer_ && other.buffer_) {
+            std::copy(other.buffer_, other.buffer_ + other.size_, buffer_);
+        }
+    }
+
+    // Deep Copy Assignment Operator with Self-Assignment Guard (C++14)
+    VectorBuffer& operator=(const VectorBuffer& other) {
+        if (this == &other) return *this; // Prevent self-destruction on v = v!
+
+        int* new_buf = other.size_ ? new int[other.size_] : nullptr;
+        if (new_buf && other.buffer_) {
+            std::copy(other.buffer_, other.buffer_ + other.size_, new_buf);
+        }
+
+        delete[] buffer_; // Free old memory
+        buffer_ = new_buf;
+        size_ = other.size_;
+        return *this;
+    }
+};
+```
+
 ---
 
 ## 2. Abstraction: Interfaces & The PIMPL Idiom

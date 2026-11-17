@@ -168,6 +168,12 @@ Deadlock occurs if and only if **all 4** hold simultaneously:
   5. Move Assignment `Widget& operator=(Widget&&) noexcept`
 - **Rule of 0**: Prefer designing classes using modern types (`std::string`, `std::vector`, `std::unique_ptr`) so the compiler generates all special members automatically.
 
+### 📋 Copy Constructor: Deep vs. Shallow Copy
+- **Why pass by reference (`const T&`)?**: Passing by value (`T other`) requires copying the argument, which calls the copy constructor $\to$ **Infinite compile-time recursion!**
+- **Shallow Copy (Compiler Default)**: Copies raw pointer addresses. Both instances point to the same heap buffer $\to$ Modifying one corrupts the other $\to$ **Double-Free Crash (`SIGABRT`)** when both destructors call `delete[]` on the same address!
+- **Deep Copy**: Allocates a brand new heap buffer and copies all elements.
+- **Copy Assignment (`operator=`)**: Always include the **Self-Assignment Guard** (`if (this == &other) return *this;`), otherwise `delete[] data_` destroys the source buffer before copying it!
+
 ### ⚡ `std::move` vs `std::forward`
 - `std::move(x)`: **Unconditional cast** to an rvalue reference (`static_cast<T&&>(x)`). Moves resource ownership.
 - `std::forward<T>(x)`: **Conditional cast**. Preserves value category (casts to rvalue *only* if the argument passed into a template function was an rvalue). Used in perfect forwarding.

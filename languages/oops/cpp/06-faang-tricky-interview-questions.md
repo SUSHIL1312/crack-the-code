@@ -239,6 +239,20 @@ Prefer composition 95% of the time. Use `private` inheritance only when:
 
 ---
 
+### Q11: Why must a Copy Constructor take its argument by reference (`const T&`)? What happens if you rely on the default shallow copy for a class with heap pointers?
+
+#### Answer:
+1. **Why `const T&` (Pass by Reference)**:
+   - If passed by value (`ClassName(ClassName other)`), creating the argument requires copying it, which calls the copy constructor, which receives its argument by value, which calls the copy constructor... $\to$ **Infinite recursion at compile time**. The compiler rejects this with a mandatory error: `error: copy constructor must pass its first parameter by reference`.
+   - `const` guarantees the source is not modified and allows copying from temporary rvalues.
+2. **The Shallow Copy Danger (Double Free Trap)**:
+   - The compiler's default copy constructor performs a shallow (bitwise) copy. For a class with an `int* data_` pointer, both original and copied objects now point to the **exact same memory address** on the heap.
+   - When the first object destructs, its destructor executes `delete[] data_`.
+   - When the second object destructs, its destructor attempts to call `delete[] data_` on the already-freed address!
+   - **Result**: Immediate crash with `SIGABRT` (`free(): double free detected`). Always write a **Deep Copy Constructor** or follow the **Rule of Zero** with `std::vector`!
+
+---
+
 <!-- Chapter Navigation Footer -->
 | ⬅️ Previous Chapter | 🏠 Up to Track Hub | Next Chapter ➡️ |
 |:---|:---:|---:|
